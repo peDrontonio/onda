@@ -107,7 +107,7 @@ class RRRPRManipulator():
         # Plot trajectory
         self.robot.plot(q=traj)  
     
-    def plan_trajectory_by_joints(self, joint_positions: np.ndarray, steps: int = 200) -> np.ndarray:
+    def plan_trajectory_by_joints(self, joint_positions: np.ndarray, steps: int = 1000) -> np.ndarray:
         '''
             ### Plan Trajectory
             This function receives a sequence of joint values and calculates and returns the trajectory passing through all joint positions.

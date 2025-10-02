@@ -3,7 +3,7 @@
 # /author: João Pedro Baltieca Garcia, aka JPBG-USP
 
 # Arguments for easy future changes
-WORKREPO=sem0590                 # Name of the working repository
+WORKREPO=onda          # Name of the working repository
 CONFIGFILE=docker/config/docker_configs.sh  # Path to the configuration file
 
 # Simples colors, other are in TOOLSFILE

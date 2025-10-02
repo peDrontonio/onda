@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Files
-WORKREPO=sem0590                 # Name of the working repository
+WORKREPO=onda                # Name of the working repository
 TOOLSFILE=docker/config/tools.sh
 
 # Docker configs
