@@ -3,7 +3,8 @@ import tkinter as tk
 from tkinter import ttk
 from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH, jtraj
 import swift
-
+from spatialgeometry import Cuboid, Cylinder, Sphere
+import spatialmath.base as smb
 
 # ============================================
 # 1) DEFINIÇÃO DO BRAÇO SUBAQUÁTICO RRRPR
@@ -27,6 +28,36 @@ arm = DHRobot([
     RevoluteDH(a=0.0, d=l5, alpha=np.pi/2, qlim=q5_lim),
 ], name="Subsea_RRRPR")
 
+# Adicionar geometria visual simples para o Swift
+# Cores
+red = [1, 0, 0, 1]
+green = [0, 1, 0, 1]
+blue = [0, 0, 1, 1]
+yellow = [1, 1, 0, 1]
+cyan = [0, 1, 1, 1]
+
+# Link 0 (Base -> J1): d=l1 (0.4)
+# O frame do Link 0 está após a rotação q1 e translação d1.
+# Para visualizar o corpo do link, podemos colocar um cilindro ao longo do eixo Z negativo (se d > 0)
+# Mas em DH padrão, a geometria do Link i se move com o Link i.
+# Vamos colocar caixas/cilindros genéricos para ver onde estão.
+
+# Link 1
+arm.links[0].geometry.append(Cylinder(radius=0.05, length=l1, color=red, pose=smb.transl(0, 0, -l1/2)))
+# Link 2 (a=l2=0.8) - ao longo de X
+arm.links[1].geometry.append(Cylinder(radius=0.04, length=l2, color=green, pose=smb.transl(-l2/2, 0, 0) @ smb.troty(np.pi/2)))
+# Link 3 (a=l3=0.7) - ao longo de X
+arm.links[2].geometry.append(Cylinder(radius=0.04, length=l3, color=blue, pose=smb.transl(-l3/2, 0, 0) @ smb.troty(np.pi/2)))
+# Link 4 (Prismatic, offset=l4=0.2) - ao longo de Z
+arm.links[3].geometry.append(Cylinder(radius=0.03, length=l4+0.1, color=yellow, pose=smb.transl(0, 0, -l4/2)))
+# Link 5 (d=l5=0.3) - ao longo de Z
+arm.links[4].geometry.append(Cylinder(radius=0.02, length=l5, color=cyan, pose=smb.transl(0, 0, -l5/2)))
+
+# Adicionar ferramenta (Tool)
+tool_geom = Cuboid([0.05, 0.1, 0.02], color=[0.5, 0.5, 0.5, 1])
+# arm.tool é uma matriz 4x4, não um link. Mas podemos adicionar ao último link.
+arm.links[4].geometry.append(tool_geom) # Adiciona ao último link
+
 print(arm)
 
 # Pose inicial
@@ -39,15 +70,33 @@ arm.q = q_current.copy()
 # ============================================
 
 env = swift.Swift()
-env.launch()      # abre no navegador
+# Try to launch without opening browser automatically if possible, or just launch
+# Note: browser=None is default (opens default browser). 
+# We can't easily disable it via arguments if 'None' means 'default'.
+# But we can try headless=True if that's what we want, but we want to see it in a browser eventually.
+# Let's try to just print the URL.
+env.launch(realtime=False)      # abre no navegador
 env.add(arm)
 
 # ============================================
 # 3) INTERFACE TKINTER COM SLIDERS
 # ============================================
 
-root = tk.Tk()
-root.title("Controle do braço subaquático RRRPR")
+import os
+if os.environ.get('DISPLAY', '') == '':
+    print('No display found. Running in headless mode.')
+    print('Swift simulation is running. Open the browser manually if needed.')
+    # Keep the script running
+    try:
+        while True:
+            env.step(0.05)
+    except KeyboardInterrupt:
+        print("Stopping...")
+    import sys
+    sys.exit(0)
+else:
+    root = tk.Tk()
+    root.title("Controle do braço subaquático RRRPR")
 
 mainframe = ttk.Frame(root, padding="10 10 10 10")
 mainframe.grid(row=0, column=0, sticky="nsew")
