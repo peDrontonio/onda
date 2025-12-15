@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- ==================================================================== -->
+  <!-- Complete system launch: Gazebo + Manipulator + Disturbance Control  -->
+  <!-- ==================================================================== -->
+
+  <arg name="gui" default="true" doc="Start Gazebo GUI"/>
+  <arg name="paused" default="false" doc="Start Gazebo paused"/>
+  <arg name="disturbance_link" default="manipulator::wrist_3_link" doc="Link to apply disturbance"/>
+
+  <!-- Launch Gazebo with the manipulator -->
+  <include file="$(find manipulator_gazebo)/launch/spawn_manipulator.launch">
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="$(arg paused)"/>
+  </include>
+
+  <!-- Wait for Gazebo to fully load (important!) -->
+  <arg name="wait_time" default="5.0"/>
+  <param name="/wait_for_gazebo" value="$(arg wait_time)" type="double"/>
+
+  <!-- Launch disturbance control system -->
+  <include file="$(find manipulator_disturbance_control)/launch/disturbance_control.launch">
+    <arg name="disturbance_link" value="$(arg disturbance_link)"/>
+  </include>
+
+  <!-- Info message -->
+  <node name="startup_info" pkg="rostopic" type="rostopic" 
+        args="pub -1 /startup_complete std_msgs/String 'Manipulator disturbance test system ready!'"
+        output="screen"/>
+
+</launch>

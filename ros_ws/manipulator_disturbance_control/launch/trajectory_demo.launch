@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- Arguments -->
+  <arg name="trajectory" default="circle" doc="Trajectory type: square, circle, zigzag, wave"/>
+  <arg name="loops" default="1" doc="Number of loops to execute"/>
+  <arg name="continuous" default="false" doc="Run continuously"/>
+  <arg name="gui" default="true" doc="Start Gazebo GUI"/>
+  <arg name="paused" default="false" doc="Start Gazebo paused"/>
+
+  <!-- Launch Gazebo with manipulator -->
+  <include file="$(find manipulator_gazebo)/launch/spawn_manipulator.launch">
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="$(arg paused)"/>
+  </include>
+
+  <!-- Wait for Gazebo to stabilize -->
+  <arg name="wait_time" default="5.0"/>
+
+  <!-- Trajectory controller node (starts after wait) -->
+  <node name="trajectory_controller" 
+        pkg="manipulator_disturbance_control" 
+        type="trajectory_controller.py"
+        output="screen"
+        launch-prefix="bash -c 'sleep $(arg wait_time); $0 $@'">
+    <param name="trajectory" value="$(arg trajectory)"/>
+    <param name="loops" value="$(arg loops)"/>
+    <param name="continuous" value="$(arg continuous)"/>
+    <param name="rate" value="50"/>
+  </node>
+
+  <!-- Info message -->
+  <node name="startup_info" pkg="rostopic" type="rostopic" 
+        args="pub -1 /trajectory_status std_msgs/String 'Trajectory $(arg trajectory) running...'"
+        output="screen"/>
+
+</launch>
