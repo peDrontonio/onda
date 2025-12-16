@@ -164,7 +164,7 @@ Siga as convenções de código e adicione testes para novas funcionalidades.
 
 ## Imagens e Vídeos
 
-![Simulação](https://youtu.be/OFawvLQKpiA)
+![Simulação](https://drive.google.com/file/d/1Bioajuh18dL6YXh0Bl7cxDEz-S56hfDP/view?usp=sharing)
 *Simulação do manipulador executando uma trajetória*
 
-[Vídeo Demonstrativo](https://youtu.be/a6rMZx1-aTg) 
+[Vídeo Demonstrativo](https://drive.google.com/file/d/1YR7aKbvposASezvE1vFXXejYeSh8mhne/view?usp=sharing) 
