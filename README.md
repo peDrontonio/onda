@@ -4,17 +4,15 @@ Projeto Onda da disciplina de Dinâmica de Sistemas Robóticos (SEM0590)
 
 ## Descrição
 
-Este projeto implementa um sistema de controle para um manipulador robótico focado em tarefas de grasping (pegada) e manipulação de objetos. O objetivo é demonstrar conceitos avançados de cinemática direta e inversa, dinâmica de sistemas robóticos e controle de movimento em ambientes simulados e reais. O sistema resolve problemas de planejamento de trajetória, detecção de colisões e otimização de pegada para aplicações industriais e de pesquisa.
+Este projeto implementa manipulador robótico focado em tarefas de solda. O objetivo é demonstrar conceitos avançados de cinemática direta e inversa, dinâmica de sistemas robóticos e controle de movimento em ambientes simulados e reais. O sistema resolve problemas de planejamento de trajetória e aplicações industriais e de pesquisa.
 
 A cinemática é tratada utilizando a Robotics Toolbox de Peter Corke, implementada em Python, permitindo cálculos precisos de posições e orientações das juntas. A dinâmica é considerada para simulações realistas, incluindo efeitos de gravidade e inércia. O controle é baseado em algoritmos de controle direto, integrando feedback de sensores para ajustes em tempo real.
 
 ## Funcionalidades
 
 - **Controle de Movimento**: Implementação de cinemática direta e inversa para posicionamento preciso das juntas do manipulador.
-- **Detecção e Desvio de Obstáculos**: Algoritmos para planejamento de trajetória que evitam colisões com objetos no ambiente.
 - **Simulação e Visualização**: Integração com simuladores como Gazebo e RViz para testes virtuais e visualização 3D do movimento.
 - **Interface com Hardware**: Comunicação via ROS (Robot Operating System) e MoveIt para controle de robôs reais.
-- **Grasping Avançado**: Classes especializadas para cálculo de pegadas ótimas, considerando geometria de objetos e força aplicada.
 - **Demonstrações Interativas**: Scripts Python para testes rápidos e validação de algoritmos.
 
 ## Tecnologias Usadas
@@ -38,20 +36,32 @@ A cinemática é tratada utilizando a Robotics Toolbox de Peter Corke, implement
 
 ### Dependências
 
-1. Instale ROS Humble e pacotes essenciais:
-   ```bash
-   sudo apt update
-   sudo apt install ros-humble-desktop ros-humble-moveit ros-humble-gazebo-ros-pkgs
-   ```
-
-2. Instale dependências Python:
-   ```bash
-   pip install roboticstoolbox-python spatialmath-python numpy matplotlib
-   ```
-
-3. Para usar Docker (recomendado):
+1. Para usar Docker (recomendado):
    - Construa a imagem: `./scripts/build.sh`
    - Execute o container: `./scripts/run.sh`
+
+### Configuração com Docker e Execução
+
+Para um ambiente isolado e fácil de configurar, use Docker:
+
+1. **Construir a Imagem Docker**:
+   ```bash
+   ./scripts/build.sh
+   ```
+   Este comando constrói uma imagem baseada no ROS Humble com todas as dependências necessárias.
+
+2. **Executar o Container**:
+   ```bash
+   ./scripts/run.sh
+   ```
+   Isso inicia um container interativo onde você pode executar comandos ROS e scripts Python.
+
+3. **Executar Códigos de Exemplo**:
+   Dentro do container ou no ambiente local, execute demonstrações:
+   - Demo básica: `python peter_corke/scripts/demo.py`
+   - Cinemática direta: `python peter_corke/scripts/cinematica_direta.py`
+   - Cinemática inversa: `python peter_corke/scripts/cinematica_inversa.py`
+   - Visualização: `python peter_corke/scripts/braco_swift_visualization.py`
 
 ### Compilação e Execução
 
@@ -79,27 +89,19 @@ A cinemática é tratada utilizando a Robotics Toolbox de Peter Corke, implement
 
 1. Lance o Gazebo com o modelo do robô:
    ```bash
-   ros2 launch <pacote> gazebo.launch.py
+   ros2 launch braco_description display.launch.py
    ```
-
-2. Abra o RViz para visualização:
+2. Lance o planejador de trajetória.
    ```bash
-   ros2 run rviz2 rviz2
+   ros2 run braco_desciption trajectory.launch.py
    ```
 
-### Controlando o Manipulador
+### Cĺculo e implementação das cinemáticas
 
 - Use scripts Python para definir posições das juntas:
   ```python
   from roboticstoolbox import DHRobot, RevoluteDH
   # Defina o robô e calcule cinemática
-  ```
-
-- Para grasping, utilize a classe GraspeClass:
-  ```python
-  from graspeClass import GraspeClass
-  gripper = GraspeClass()
-  gripper.grasp_object(position, orientation)
   ```
 
 ### Visualização
@@ -135,35 +137,6 @@ print("Juntas calculadas:", q.q)
 
 Para executar: `python exemplo.py`
 
-## Arquitetura do Sistema
-
-O sistema é dividido em módulos ROS:
-
-- **Sensores**: Nós para leitura de dados de câmeras, força e posição.
-- **Controlador**: Algoritmos de cinemática e dinâmica para planejamento de movimento.
-- **Atuadores**: Interface com motores e gripper para execução física.
-
-Fluxo de Dados:
-1. Sensores → Processamento (cinemática inversa) → Planejamento de Trajetória → Controle de Atuadores.
-
-Integração: ROS actua como middleware, conectando simulação (Gazebo) com hardware real via MoveIt.
-
-## Testes
-
-### Testes Unitários
-
-Execute testes para funções de cinemática:
-```bash
-python -m pytest tests/test_kinematics.py
-```
-
-### Testes de Integração
-
-Lance simulação completa no Gazebo e verifique trajetórias:
-```bash
-ros2 launch <pacote> test_integration.launch.py
-```
-
 ### Simulações
 
 Para testar grasping: `python peter_corke/scripts/demo_first_try.py`
@@ -180,9 +153,6 @@ Contribuições são bem-vindas! Para contribuir:
 
 Siga as convenções de código e adicione testes para novas funcionalidades.
 
-## Licença
-
-Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para detalhes.
 
 ## Referências e Links Úteis
 
@@ -194,15 +164,7 @@ Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para det
 
 ## Imagens e Vídeos
 
-![Simulação no Gazebo](docs/images/gazebo_simulation.png)
-*Simulação do manipulador executando uma tarefa de grasping.*
+![Simulação](ros_ws/output/rviz_viz.png)
+*Simulação do manipulador executando uma trajetória*
 
 [Vídeo Demonstrativo](https://example.com/video) (placeholder - adicione link real)
-
-## Problemas Conhecidos
-
-- **Limitação na Cinêmica Inversa**: Algumas poses podem não ter solução única; use métodos numéricos como LM para aproximar.
-- **Compatibilidade com Hardware**: Testado principalmente em simulação; ajustes necessários para robôs reais devido a folgas mecânicas.
-- **Performance**: Simulações pesadas podem exigir hardware potente; considere otimizar loops de controle.
-
-Para soluções alternativas, consulte a documentação do MoveIt para planejamento avançado.
