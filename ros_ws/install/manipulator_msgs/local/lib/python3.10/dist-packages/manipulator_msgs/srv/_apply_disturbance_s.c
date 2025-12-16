@@ -1,1 +1,0 @@
-/home/host/ros_ws/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs/srv/_apply_disturbance_s.c

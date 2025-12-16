@@ -1,6 +1,0 @@
-{
-  "package_name": "manipulator_msgs",
-  "non_idl_tuples": [
-    "/home/host/ros_ws/src/manipulator_msgs:srv/ApplyDisturbance.srv"
-  ]
-}

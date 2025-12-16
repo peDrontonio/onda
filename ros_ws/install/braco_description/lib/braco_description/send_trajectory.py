@@ -1,1 +1,0 @@
-/home/host/ros_ws/src/braco_description/scripts/send_trajectory.py

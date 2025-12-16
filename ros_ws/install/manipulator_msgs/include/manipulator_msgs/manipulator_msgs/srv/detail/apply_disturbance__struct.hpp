@@ -1,1 +1,0 @@
-/home/host/ros_ws/build/manipulator_msgs/rosidl_generator_cpp/manipulator_msgs/srv/detail/apply_disturbance__struct.hpp

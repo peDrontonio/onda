@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/host/ros_ws/build/manipulator_disturbance_control/disturbance_applier_node" "/home/host/ros_ws/build/manipulator_disturbance_control/test_disturbance_client" "TARGETS" "disturbance_applier_node" "test_disturbance_client" "DESTINATION" "lib/manipulator_disturbance_control")

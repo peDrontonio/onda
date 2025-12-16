@@ -1,1 +1,0 @@
-/home/host/ros_ws/build/braco_description/ament_cmake_environment_hooks/local_setup.sh

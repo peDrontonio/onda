@@ -1,1 +1,0 @@
-/home/host/ros_ws/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c

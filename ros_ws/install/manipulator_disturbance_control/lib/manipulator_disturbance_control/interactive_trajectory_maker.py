@@ -1,1 +1,0 @@
-/home/host/ros_ws/src/manipulator_disturbance_control/scripts/interactive_trajectory_maker.py
