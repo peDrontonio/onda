@@ -164,7 +164,7 @@ Siga as convenções de código e adicione testes para novas funcionalidades.
 
 ## Imagens e Vídeos
 
-![Simulação](ros_ws/output/rviz_viz.png)
+![Simulação](https://youtu.be/OFawvLQKpiA)
 *Simulação do manipulador executando uma trajetória*
 
-[Vídeo Demonstrativo](https://example.com/video) (placeholder - adicione link real)
+[Vídeo Demonstrativo](https://youtu.be/a6rMZx1-aTg) 
