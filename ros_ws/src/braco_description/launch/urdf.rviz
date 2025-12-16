@@ -57,58 +57,15 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
       Enabled: true
       Links:
-        2dofknuckle_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_10:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_7:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_8:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        2dofknuckle_link_9:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
@@ -119,233 +76,42 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        bucket_link_1:
+        prism1_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        face_link_1:
+        rot1_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        facebracket_link_1:
+        rot2_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hcsr04_cans_link_1:
+        rot3_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        hcsr04_chips_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        hcsr04_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leg_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leg_link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leg_link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        leg_link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        lipo_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_10:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_7:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_8:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mg90_link_9:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mpu9250_cap_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mpu9250_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mpu9250_mpu_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pizerow_cam_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pizerow_con_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pizerow_cpu_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        pizerow_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        raspicam_cam_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        raspicam_chips_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        raspicam_con_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        raspicam_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_10:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_7:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_8:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        servobottom_link_9:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        shell_link_1:
+        rot4_1:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
       Name: RobotModel
-      Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
       Visual Enabled: true
     - Class: rviz_default_plugins/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: true
-      Marker Scale: 0.5
+      Marker Scale: 0.3
       Name: TF
       Show Arrows: true
       Show Axes: true
@@ -353,7 +119,7 @@ Visualization Manager:
       Tree:
         {}
       Update Interval: 0
-      Value: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -382,25 +148,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.34426525235176086
+      Distance: 3.0
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.0016349668148905039
-        Y: -0.014781012199819088
-        Z: 0.017814036458730698
+        X: 0
+        Y: 0
+        Z: 0.5
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.46039697527885437
+      Pitch: 0.5
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.593582272529602
+      Yaw: 0.8
     Saved: ~
 Window Geometry:
   Displays:

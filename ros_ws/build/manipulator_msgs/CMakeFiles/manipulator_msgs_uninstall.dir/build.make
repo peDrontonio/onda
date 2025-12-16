@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/host/onda/ros_ws/src/manipulator_msgs
+CMAKE_SOURCE_DIR = /home/host/ros_ws/src/manipulator_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/host/onda/ros_ws/build/manipulator_msgs
+CMAKE_BINARY_DIR = /home/host/ros_ws/build/manipulator_msgs
 
 # Utility rule file for manipulator_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/manipulator_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/manipulator_msgs_uninstall.dir/progress.make
 
 CMakeFiles/manipulator_msgs_uninstall:
-	/usr/bin/cmake -P /home/host/onda/ros_ws/build/manipulator_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/host/ros_ws/build/manipulator_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 manipulator_msgs_uninstall: CMakeFiles/manipulator_msgs_uninstall
 manipulator_msgs_uninstall: CMakeFiles/manipulator_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/manipulator_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/manipulator_msgs_uninstall.dir/clean
 
 CMakeFiles/manipulator_msgs_uninstall.dir/depend:
-	cd /home/host/onda/ros_ws/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/onda/ros_ws/src/manipulator_msgs /home/host/onda/ros_ws/src/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs/CMakeFiles/manipulator_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/host/ros_ws/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/ros_ws/src/manipulator_msgs /home/host/ros_ws/src/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs/CMakeFiles/manipulator_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/manipulator_msgs_uninstall.dir/depend
 

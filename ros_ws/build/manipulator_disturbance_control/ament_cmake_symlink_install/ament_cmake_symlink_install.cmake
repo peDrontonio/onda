@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/host/onda/ros_ws/install/manipulator_disturbance_control/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/host/ros_ws/install/manipulator_disturbance_control/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/host/onda/ros_ws/install/manipulator_disturbance_control/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/host/ros_ws/install/manipulator_disturbance_control/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/host/onda/ros_ws/install/manipulator_disturbance_control/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/host/ros_ws/install/manipulator_disturbance_control/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/host/onda/ros_ws/install/manipulator_disturbance_control/${destination}")
+      set(destination "/home/host/ros_ws/install/manipulator_disturbance_control/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,55 +311,55 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "disturbance_applier_node" "test_disturbance_client" "DESTINATION" "lib/manipulator_disturbance_control")
-include("/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(PROGRAMS "scripts/test_disturbance_client.py" "DESTINATION" "lib/manipulator_disturbance_control")
-ament_cmake_symlink_install_programs("/home/host/onda/ros_ws/src/manipulator_disturbance_control" PROGRAMS "scripts/test_disturbance_client.py" "DESTINATION" "lib/manipulator_disturbance_control")
+# install(PROGRAMS "scripts/test_disturbance_client.py" "scripts/interactive_trajectory_maker.py" "scripts/trajectory_recorder.py" "DESTINATION" "lib/manipulator_disturbance_control")
+ament_cmake_symlink_install_programs("/home/host/ros_ws/src/manipulator_disturbance_control" PROGRAMS "scripts/test_disturbance_client.py" "scripts/interactive_trajectory_maker.py" "scripts/trajectory_recorder.py" "DESTINATION" "lib/manipulator_disturbance_control")
 
 # install(DIRECTORY "launch/" "DESTINATION" "share/manipulator_disturbance_control/launch")
-ament_cmake_symlink_install_directory("/home/host/onda/ros_ws/src/manipulator_disturbance_control" DIRECTORY "launch/" "DESTINATION" "share/manipulator_disturbance_control/launch")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/manipulator_disturbance_control" DIRECTORY "launch/" "DESTINATION" "share/manipulator_disturbance_control/launch")
 
 # install(DIRECTORY "config/" "DESTINATION" "share/manipulator_disturbance_control/config")
-ament_cmake_symlink_install_directory("/home/host/onda/ros_ws/src/manipulator_disturbance_control" DIRECTORY "config/" "DESTINATION" "share/manipulator_disturbance_control/config")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/manipulator_disturbance_control" DIRECTORY "config/" "DESTINATION" "share/manipulator_disturbance_control/config")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/manipulator_disturbance_control/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/manipulator_disturbance_control/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/manipulator_disturbance_control/environment")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/manipulator_disturbance_control/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/manipulator_disturbance_control/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/manipulator_disturbance_control/environment")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_disturbance_control/environment")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_disturbance_control")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_disturbance_control")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_disturbance_control")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_disturbance_control")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_disturbance_control")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_disturbance_control")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_disturbance_control")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_disturbance_control")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_disturbance_control")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_disturbance_control")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_disturbance_control")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_disturbance_control")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_disturbance_control")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_disturbance_control")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_disturbance_control")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_disturbance_control")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_disturbance_control")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_disturbance_control")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_disturbance_control")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_disturbance_control")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_disturbance_control" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig.cmake" "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig-version.cmake" "DESTINATION" "share/manipulator_disturbance_control/cmake")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig.cmake" "/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig-version.cmake" "DESTINATION" "share/manipulator_disturbance_control/cmake")
+# install(FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig.cmake" "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig-version.cmake" "DESTINATION" "share/manipulator_disturbance_control/cmake")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig.cmake" "/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_core/manipulator_disturbance_controlConfig-version.cmake" "DESTINATION" "share/manipulator_disturbance_control/cmake")
 
-# install(FILES "/home/host/onda/ros_ws/src/manipulator_disturbance_control/package.xml" "DESTINATION" "share/manipulator_disturbance_control")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/onda/ros_ws/src/manipulator_disturbance_control/package.xml" "DESTINATION" "share/manipulator_disturbance_control")
+# install(FILES "/home/host/ros_ws/src/manipulator_disturbance_control/package.xml" "DESTINATION" "share/manipulator_disturbance_control")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_disturbance_control" FILES "/home/host/ros_ws/src/manipulator_disturbance_control/package.xml" "DESTINATION" "share/manipulator_disturbance_control")

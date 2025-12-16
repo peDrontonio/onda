@@ -1,1 +1,1 @@
-/home/host/onda/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.bash
+/home/host/ros_ws/build/manipulator_disturbance_control/ament_cmake_environment_hooks/local_setup.bash

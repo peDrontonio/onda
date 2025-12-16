@@ -1,1 +1,1 @@
-/home/host/onda/ros_ws/build/manipulator_msgs/ament_cmake_core/manipulator_msgsConfig-version.cmake
+/home/host/ros_ws/build/manipulator_msgs/ament_cmake_core/manipulator_msgsConfig-version.cmake

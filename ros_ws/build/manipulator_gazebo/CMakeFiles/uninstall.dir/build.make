@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/host/onda/ros_ws/src/manipulator_gazebo
+CMAKE_SOURCE_DIR = /home/host/ros_ws/src/manipulator_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/host/onda/ros_ws/build/manipulator_gazebo
+CMAKE_BINARY_DIR = /home/host/ros_ws/build/manipulator_gazebo
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/host/onda/ros_ws/build/manipulator_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/onda/ros_ws/src/manipulator_gazebo /home/host/onda/ros_ws/src/manipulator_gazebo /home/host/onda/ros_ws/build/manipulator_gazebo /home/host/onda/ros_ws/build/manipulator_gazebo /home/host/onda/ros_ws/build/manipulator_gazebo/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/host/ros_ws/build/manipulator_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/ros_ws/src/manipulator_gazebo /home/host/ros_ws/src/manipulator_gazebo /home/host/ros_ws/build/manipulator_gazebo /home/host/ros_ws/build/manipulator_gazebo /home/host/ros_ws/build/manipulator_gazebo/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

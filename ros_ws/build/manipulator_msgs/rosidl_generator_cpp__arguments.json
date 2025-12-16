@@ -1,9 +1,9 @@
 {
   "package_name": "manipulator_msgs",
-  "output_dir": "/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_generator_cpp/manipulator_msgs",
+  "output_dir": "/home/host/ros_ws/build/manipulator_msgs/rosidl_generator_cpp/manipulator_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/ApplyDisturbance.idl"
+    "/home/host/ros_ws/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/ApplyDisturbance.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -87,7 +87,7 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/ApplyDisturbance.idl",
+    "/home/host/ros_ws/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/ApplyDisturbance.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

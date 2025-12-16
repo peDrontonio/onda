@@ -1,1 +1,1 @@
-/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs/srv/__init__.py
+/home/host/ros_ws/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs/srv/__init__.py

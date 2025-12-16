@@ -1,8 +1,8 @@
-# Install script for directory: /home/host/onda/ros_ws/src/braco_description
+# Install script for directory: /home/host/ros_ws/src/braco_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/host/onda/ros_ws/install/braco_description")
+  set(CMAKE_INSTALL_PREFIX "/home/host/ros_ws/install/braco_description")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/host/onda/ros_ws/build/braco_description/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/host/ros_ws/build/braco_description/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/host/onda/ros_ws/build/braco_description/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/host/ros_ws/build/braco_description/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

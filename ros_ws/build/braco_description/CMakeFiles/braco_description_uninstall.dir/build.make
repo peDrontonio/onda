@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/host/onda/ros_ws/src/braco_description
+CMAKE_SOURCE_DIR = /home/host/ros_ws/src/braco_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/host/onda/ros_ws/build/braco_description
+CMAKE_BINARY_DIR = /home/host/ros_ws/build/braco_description
 
 # Utility rule file for braco_description_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/braco_description_uninstall.dir/compiler_depend.make
 include CMakeFiles/braco_description_uninstall.dir/progress.make
 
 CMakeFiles/braco_description_uninstall:
-	/usr/bin/cmake -P /home/host/onda/ros_ws/build/braco_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/host/ros_ws/build/braco_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 braco_description_uninstall: CMakeFiles/braco_description_uninstall
 braco_description_uninstall: CMakeFiles/braco_description_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/braco_description_uninstall.dir/clean:
 .PHONY : CMakeFiles/braco_description_uninstall.dir/clean
 
 CMakeFiles/braco_description_uninstall.dir/depend:
-	cd /home/host/onda/ros_ws/build/braco_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/onda/ros_ws/src/braco_description /home/host/onda/ros_ws/src/braco_description /home/host/onda/ros_ws/build/braco_description /home/host/onda/ros_ws/build/braco_description /home/host/onda/ros_ws/build/braco_description/CMakeFiles/braco_description_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/host/ros_ws/build/braco_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/ros_ws/src/braco_description /home/host/ros_ws/src/braco_description /home/host/ros_ws/build/braco_description /home/host/ros_ws/build/braco_description /home/host/ros_ws/build/braco_description/CMakeFiles/braco_description_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/braco_description_uninstall.dir/depend
 

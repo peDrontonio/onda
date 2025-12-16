@@ -1,0 +1,28 @@
+[0.020s] Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_gazebo -- -j8 -l8
+[0.068s] Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_gazebo -- -j8 -l8
+[0.071s] Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_gazebo
+[0.083s] -- Install configuration: ""
+[0.083s] -- Execute custom install script
+[0.084s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/launch/complete_system.launch
+[0.084s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/launch/spawn_manipulator.launch
+[0.085s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/urdf/simple_manipulator.urdf.xacro
+[0.085s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/worlds/simple_world.world
+[0.085s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/joint_controllers.yaml
+[0.086s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/joint_controllers_effort.yaml
+[0.086s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/pid_gains.yaml
+[0.087s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/package_run_dependencies/manipulator_gazebo
+[0.087s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/parent_prefix_path/manipulator_gazebo
+[0.087s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/ament_prefix_path.sh
+[0.088s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/ament_prefix_path.dsv
+[0.088s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/path.sh
+[0.088s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/path.dsv
+[0.088s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.bash
+[0.089s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.sh
+[0.089s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.zsh
+[0.090s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.dsv
+[0.090s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.dsv
+[0.112s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/packages/manipulator_gazebo
+[0.112s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/cmake/manipulator_gazeboConfig.cmake
+[0.112s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/cmake/manipulator_gazeboConfig-version.cmake
+[0.112s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.xml
+[0.134s] Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_gazebo

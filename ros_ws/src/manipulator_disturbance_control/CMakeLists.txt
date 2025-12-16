@@ -64,6 +64,8 @@ install(TARGETS
 # Install Python scripts
 install(PROGRAMS
   scripts/test_disturbance_client.py
+  scripts/interactive_trajectory_maker.py
+  scripts/trajectory_recorder.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -1,1 +1,1 @@
-/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig.cmake
+/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig.cmake

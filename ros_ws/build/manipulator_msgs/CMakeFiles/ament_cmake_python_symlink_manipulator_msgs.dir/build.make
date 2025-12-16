@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/host/onda/ros_ws/src/manipulator_msgs
+CMAKE_SOURCE_DIR = /home/host/ros_ws/src/manipulator_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/host/onda/ros_ws/build/manipulator_msgs
+CMAKE_BINARY_DIR = /home/host/ros_ws/build/manipulator_msgs
 
 # Utility rule file for ament_cmake_python_symlink_manipulator_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/compiler_depe
 include CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_manipulator_msgs:
-	/usr/bin/cmake -E create_symlink /home/host/onda/ros_ws/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs/ament_cmake_python/manipulator_msgs/manipulator_msgs
+	/usr/bin/cmake -E create_symlink /home/host/ros_ws/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs/ament_cmake_python/manipulator_msgs/manipulator_msgs
 
 ament_cmake_python_symlink_manipulator_msgs: CMakeFiles/ament_cmake_python_symlink_manipulator_msgs
 ament_cmake_python_symlink_manipulator_msgs: CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/depend:
-	cd /home/host/onda/ros_ws/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/onda/ros_ws/src/manipulator_msgs /home/host/onda/ros_ws/src/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs/CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/host/ros_ws/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/ros_ws/src/manipulator_msgs /home/host/ros_ws/src/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs/CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_manipulator_msgs.dir/depend
 

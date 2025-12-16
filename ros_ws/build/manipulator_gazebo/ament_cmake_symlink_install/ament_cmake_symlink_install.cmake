@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/host/onda/ros_ws/install/manipulator_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/host/ros_ws/install/manipulator_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/host/onda/ros_ws/install/manipulator_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/host/ros_ws/install/manipulator_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/host/onda/ros_ws/install/manipulator_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/host/ros_ws/install/manipulator_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/host/onda/ros_ws/install/manipulator_gazebo/${destination}")
+      set(destination "/home/host/ros_ws/install/manipulator_gazebo/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,55 +311,55 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch/" "DESTINATION" "share/manipulator_gazebo/launch")
-ament_cmake_symlink_install_directory("/home/host/onda/ros_ws/src/manipulator_gazebo" DIRECTORY "launch/" "DESTINATION" "share/manipulator_gazebo/launch")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/manipulator_gazebo" DIRECTORY "launch/" "DESTINATION" "share/manipulator_gazebo/launch")
 
 # install(DIRECTORY "urdf/" "DESTINATION" "share/manipulator_gazebo/urdf")
-ament_cmake_symlink_install_directory("/home/host/onda/ros_ws/src/manipulator_gazebo" DIRECTORY "urdf/" "DESTINATION" "share/manipulator_gazebo/urdf")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/manipulator_gazebo" DIRECTORY "urdf/" "DESTINATION" "share/manipulator_gazebo/urdf")
 
 # install(DIRECTORY "worlds/" "DESTINATION" "share/manipulator_gazebo/worlds")
-ament_cmake_symlink_install_directory("/home/host/onda/ros_ws/src/manipulator_gazebo" DIRECTORY "worlds/" "DESTINATION" "share/manipulator_gazebo/worlds")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/manipulator_gazebo" DIRECTORY "worlds/" "DESTINATION" "share/manipulator_gazebo/worlds")
 
 # install(DIRECTORY "config/" "DESTINATION" "share/manipulator_gazebo/config")
-ament_cmake_symlink_install_directory("/home/host/onda/ros_ws/src/manipulator_gazebo" DIRECTORY "config/" "DESTINATION" "share/manipulator_gazebo/config")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/manipulator_gazebo" DIRECTORY "config/" "DESTINATION" "share/manipulator_gazebo/config")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/manipulator_gazebo/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/manipulator_gazebo/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/manipulator_gazebo/environment")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/manipulator_gazebo/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/manipulator_gazebo/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/manipulator_gazebo/environment")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/manipulator_gazebo/environment")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_gazebo")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_gazebo")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_gazebo")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/manipulator_gazebo")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_gazebo")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_gazebo")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_gazebo")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/manipulator_gazebo")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_gazebo")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_gazebo")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_gazebo")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/manipulator_gazebo")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_gazebo")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_gazebo")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_gazebo")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/manipulator_gazebo")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_gazebo")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_gazebo")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_gazebo")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/manipulator_gazebo")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/manipulator_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig.cmake" "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig-version.cmake" "DESTINATION" "share/manipulator_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig.cmake" "/home/host/onda/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig-version.cmake" "DESTINATION" "share/manipulator_gazebo/cmake")
+# install(FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig.cmake" "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig-version.cmake" "DESTINATION" "share/manipulator_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig.cmake" "/home/host/ros_ws/build/manipulator_gazebo/ament_cmake_core/manipulator_gazeboConfig-version.cmake" "DESTINATION" "share/manipulator_gazebo/cmake")
 
-# install(FILES "/home/host/onda/ros_ws/src/manipulator_gazebo/package.xml" "DESTINATION" "share/manipulator_gazebo")
-ament_cmake_symlink_install_files("/home/host/onda/ros_ws/src/manipulator_gazebo" FILES "/home/host/onda/ros_ws/src/manipulator_gazebo/package.xml" "DESTINATION" "share/manipulator_gazebo")
+# install(FILES "/home/host/ros_ws/src/manipulator_gazebo/package.xml" "DESTINATION" "share/manipulator_gazebo")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/manipulator_gazebo" FILES "/home/host/ros_ws/src/manipulator_gazebo/package.xml" "DESTINATION" "share/manipulator_gazebo")

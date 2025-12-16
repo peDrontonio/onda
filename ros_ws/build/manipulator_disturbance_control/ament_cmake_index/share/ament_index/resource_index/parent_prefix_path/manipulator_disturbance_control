@@ -1,1 +1,1 @@
-/home/host/onda/ros_ws/install/manipulator_msgs:/opt/ros/humble
+/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble

@@ -1,0 +1,70 @@
+[0.025s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8
+[0.052s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.171s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.180s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.210s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.213s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.219s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.230s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.243s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.281s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.283s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.401s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.460s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.460s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.476s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.521s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.563s] -- Found manipulator_msgs: 1.0.0 (/home/host/onda/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake)
+[0.578s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.668s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.672s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.674s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.680s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.753s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.755s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.756s] -- Configured cppcheck include dirs: 
+[0.756s] -- Configured cppcheck exclude dirs and/or files: 
+[0.757s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.757s] -- Configured cpplint exclude dirs and/or files: 
+[0.758s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.758s] -- Added test 'lint_cmake' to check CMake code style
+[0.759s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.760s] -- Added test 'uncrustify' to check C / C++ code style
+[0.760s] -- Configured uncrustify additional arguments: 
+[0.761s] -- Added test 'xmllint' to check XML markup files
+[0.762s] -- Configuring done
+[0.779s] -- Generating done
+[0.785s] -- Build files have been written to: /home/host/ros_ws/build/manipulator_disturbance_control
+[0.808s] [35m[1mConsolidate compiler generated dependencies of target test_disturbance_client[0m
+[0.808s] [35m[1mConsolidate compiler generated dependencies of target disturbance_applier_node[0m
+[0.825s] [ 50%] Built target test_disturbance_client
+[0.827s] [100%] Built target disturbance_applier_node
+[0.837s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '0': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8
+[0.845s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_disturbance_control
+[0.851s] -- Install configuration: ""
+[0.851s] -- Execute custom install script
+[0.851s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/disturbance_applier_node
+[0.852s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client
+[0.852s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client.py
+[0.852s] -- Symlinking: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/interactive_trajectory_maker.py
+[0.859s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/disturbance_control.launch
+[0.859s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_control.launch
+[0.859s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_demo.launch
+[0.859s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_disturbance_test.launch
+[0.859s] -- Symlinking: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_maker.launch.py
+[0.866s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.sh
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.dsv
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.sh
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.dsv
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.bash
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.sh
+[0.867s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.zsh
+[0.868s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.dsv
+[0.868s] -- Symlinking: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.dsv
+[0.874s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/packages/manipulator_disturbance_control
+[0.874s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig.cmake
+[0.874s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig-version.cmake
+[0.875s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.xml
+[0.876s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '0': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_disturbance_control

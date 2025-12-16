@@ -1,1 +1,1 @@
-/home/host/onda/ros_ws/src/braco_description/launch/gazebo.launch.py
+/home/host/ros_ws/src/braco_description/launch/gazebo.launch.py

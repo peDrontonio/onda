@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/host/onda/ros_ws/src/manipulator_msgs
+CMAKE_SOURCE_DIR = /home/host/ros_ws/src/manipulator_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/host/onda/ros_ws/build/manipulator_msgs
+CMAKE_BINARY_DIR = /home/host/ros_ws/build/manipulator_msgs
 
 # Utility rule file for manipulator_msgs__cpp.
 
@@ -153,8 +153,8 @@ rosidl_generator_cpp/manipulator_msgs/srv/apply_disturbance.hpp: /opt/ros/humble
 rosidl_generator_cpp/manipulator_msgs/srv/apply_disturbance.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_cpp/manipulator_msgs/srv/apply_disturbance.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/manipulator_msgs/srv/apply_disturbance.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/host/onda/ros_ws/build/manipulator_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/host/onda/ros_ws/build/manipulator_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/host/ros_ws/build/manipulator_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/host/ros_ws/build/manipulator_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/manipulator_msgs/srv/detail/apply_disturbance__builder.hpp: rosidl_generator_cpp/manipulator_msgs/srv/apply_disturbance.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/manipulator_msgs/srv/detail/apply_disturbance__builder.hpp
@@ -186,6 +186,6 @@ CMakeFiles/manipulator_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/manipulator_msgs__cpp.dir/clean
 
 CMakeFiles/manipulator_msgs__cpp.dir/depend:
-	cd /home/host/onda/ros_ws/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/onda/ros_ws/src/manipulator_msgs /home/host/onda/ros_ws/src/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs /home/host/onda/ros_ws/build/manipulator_msgs/CMakeFiles/manipulator_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/host/ros_ws/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/host/ros_ws/src/manipulator_msgs /home/host/ros_ws/src/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs /home/host/ros_ws/build/manipulator_msgs/CMakeFiles/manipulator_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/manipulator_msgs__cpp.dir/depend
 

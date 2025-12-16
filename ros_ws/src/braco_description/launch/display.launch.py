@@ -9,6 +9,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, Command
 from launch_ros.actions import Node
+import launch.conditions
 
 
 def generate_launch_description():
@@ -35,12 +36,13 @@ def generate_launch_description():
     gui_arg = DeclareLaunchArgument(
         name='gui',
         default_value='true',
-        description='Flag to enable joint_state_publisher_gui'
+        description='Flag to enable joint_state_publisher_gui (set false when using trajectory maker)'
     )
     
     # Get launch configuration
     model = LaunchConfiguration('model')
     rviz_config = LaunchConfiguration('rvizconfig')
+    gui = LaunchConfiguration('gui')
     
     # Robot State Publisher - publishes transforms
     robot_state_publisher_node = Node(
@@ -55,11 +57,13 @@ def generate_launch_description():
     )
     
     # Joint State Publisher GUI - allows manual joint control
+    # Only launched if gui:=true
     joint_state_publisher_gui_node = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
         name='joint_state_publisher_gui',
-        output='screen'
+        output='screen',
+        condition=launch.conditions.IfCondition(gui)
     )
     
     # RViz2 - visualization

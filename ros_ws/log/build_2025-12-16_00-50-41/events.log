@@ -1,0 +1,303 @@
+[0.000000] (-) TimerEvent: {}
+[0.000246] (braco_description) JobQueued: {'identifier': 'braco_description', 'dependencies': OrderedDict()}
+[0.000385] (manipulator_gazebo) JobQueued: {'identifier': 'manipulator_gazebo', 'dependencies': OrderedDict()}
+[0.000434] (manipulator_msgs) JobQueued: {'identifier': 'manipulator_msgs', 'dependencies': OrderedDict()}
+[0.000472] (manipulator_disturbance_control) JobQueued: {'identifier': 'manipulator_disturbance_control', 'dependencies': OrderedDict([('manipulator_msgs', '/home/host/ros_ws/install/manipulator_msgs')])}
+[0.000511] (manipulator_msgs) JobStarted: {'identifier': 'manipulator_msgs'}
+[0.021659] (braco_description) JobStarted: {'identifier': 'braco_description'}
+[0.028130] (manipulator_gazebo) JobStarted: {'identifier': 'manipulator_gazebo'}
+[0.034921] (manipulator_msgs) JobProgress: {'identifier': 'manipulator_msgs', 'progress': 'cmake'}
+[0.035649] (manipulator_msgs) JobProgress: {'identifier': 'manipulator_msgs', 'progress': 'build'}
+[0.036476] (manipulator_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/host/ros_ws/build/manipulator_msgs', '--', '-j8', '-l8'], 'cwd': '/home/host/ros_ws/build/manipulator_msgs', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/manipulator_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[0.038879] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'cmake'}
+[0.039723] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'build'}
+[0.039996] (braco_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/host/ros_ws/build/braco_description', '--', '-j8', '-l8'], 'cwd': '/home/host/ros_ws/build/braco_description', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/braco_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[0.045317] (manipulator_gazebo) JobProgress: {'identifier': 'manipulator_gazebo', 'progress': 'cmake'}
+[0.045373] (manipulator_gazebo) JobProgress: {'identifier': 'manipulator_gazebo', 'progress': 'build'}
+[0.045411] (manipulator_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/host/ros_ws/build/manipulator_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/host/ros_ws/build/manipulator_gazebo', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/manipulator_gazebo'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[0.081104] (braco_description) CommandEnded: {'returncode': 0}
+[0.082125] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'install'}
+[0.091164] (manipulator_msgs) StdoutLine: {'line': b'[  3%] Built target manipulator_msgs__cpp\n'}
+[0.093139] (manipulator_msgs) StdoutLine: {'line': b'[ 12%] Built target manipulator_msgs__rosidl_generator_c\n'}
+[0.094380] (braco_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/host/ros_ws/build/braco_description'], 'cwd': '/home/host/ros_ws/build/braco_description', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/braco_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[0.096598] (manipulator_gazebo) CommandEnded: {'returncode': 0}
+[0.098230] (manipulator_gazebo) JobProgress: {'identifier': 'manipulator_gazebo', 'progress': 'install'}
+[0.098814] (manipulator_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/host/ros_ws/build/manipulator_gazebo'], 'cwd': '/home/host/ros_ws/build/manipulator_gazebo', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/manipulator_gazebo'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[0.099244] (manipulator_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_manipulator_msgs\n'}
+[0.099398] (-) TimerEvent: {}
+[0.104396] (braco_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.105766] (braco_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.107007] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Bra\xc3\xa7o.gazebo\n'}
+[0.107275] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Bra\xc3\xa7o.trans\n'}
+[0.107454] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Bra\xc3\xa7o.xacro\n'}
+[0.107610] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.urdf\n'}
+[0.107758] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco_fixed.urdf\n'}
+[0.107933] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/materials.xacro\n'}
+[0.108562] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/base_link.stl\n'}
+[0.108767] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/prism1_1.stl\n'}
+[0.108930] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot1_1.stl\n'}
+[0.109091] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot2_1.stl\n'}
+[0.109449] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot3_1.stl\n'}
+[0.109708] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot4_1.stl\n'}
+[0.110265] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.launch\n'}
+[0.110735] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.yaml\n'}
+[0.111259] (manipulator_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.112511] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch\n'}
+[0.112757] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch.py\n'}
+[0.112888] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch\n'}
+[0.113034] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch.py\n'}
+[0.113158] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/urdf.rviz\n'}
+[0.113324] (manipulator_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.114108] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/launch/complete_system.launch\n'}
+[0.114628] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/launch/spawn_manipulator.launch\n'}
+[0.115557] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/urdf/simple_manipulator.urdf.xacro\n'}
+[0.115817] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/launch//controller.yaml\n'}
+[0.116042] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/launch//urdf.rviz\n'}
+[0.116173] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/package_run_dependencies/braco_description\n'}
+[0.116345] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/parent_prefix_path/braco_description\n'}
+[0.116542] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.sh\n'}
+[0.116794] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.dsv\n'}
+[0.117037] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.sh\n'}
+[0.117995] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.dsv\n'}
+[0.118257] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.bash\n'}
+[0.118459] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/worlds/simple_world.world\n'}
+[0.118643] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.sh\n'}
+[0.118818] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.zsh\n'}
+[0.119036] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.dsv\n'}
+[0.119232] (braco_description) StdoutLine: {'line': b'-- Symlinking: /home/host/ros_ws/install/braco_description/share/braco_description/package.dsv\n'}
+[0.119571] (manipulator_msgs) StdoutLine: {'line': b'[ 22%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.120107] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/joint_controllers.yaml\n'}
+[0.120323] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/joint_controllers_effort.yaml\n'}
+[0.120494] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/pid_gains.yaml\n'}
+[0.120717] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/package_run_dependencies/manipulator_gazebo\n'}
+[0.121373] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/parent_prefix_path/manipulator_gazebo\n'}
+[0.125769] (manipulator_msgs) StdoutLine: {'line': b'[ 32%] Built target manipulator_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.126315] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/ament_prefix_path.sh\n'}
+[0.126593] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/ament_prefix_path.dsv\n'}
+[0.127650] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/path.sh\n'}
+[0.127850] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/path.dsv\n'}
+[0.127975] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.bash\n'}
+[0.128089] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.sh\n'}
+[0.128201] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.zsh\n'}
+[0.128310] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.dsv\n'}
+[0.128419] (manipulator_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.dsv\n'}
+[0.132801] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/packages/braco_description\n'}
+[0.133398] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig.cmake\n'}
+[0.136775] (manipulator_msgs) StdoutLine: {'line': b'[ 41%] Built target manipulator_msgs__rosidl_typesupport_introspection_c\n'}
+[0.138112] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig-version.cmake\n'}
+[0.138806] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/package.xml\n'}
+[0.139399] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/packages/manipulator_gazebo\n'}
+[0.140859] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/cmake/manipulator_gazeboConfig.cmake\n'}
+[0.141240] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/cmake/manipulator_gazeboConfig-version.cmake\n'}
+[0.143702] (manipulator_gazebo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.xml\n'}
+[0.154418] (braco_description) CommandEnded: {'returncode': 0}
+[0.155771] (manipulator_msgs) StdoutLine: {'line': b'[ 51%] Built target manipulator_msgs__rosidl_typesupport_cpp\n'}
+[0.157858] (manipulator_msgs) StdoutLine: {'line': b'[ 61%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.160429] (manipulator_msgs) StdoutLine: {'line': b'[ 70%] Built target manipulator_msgs__rosidl_typesupport_c\n'}
+[0.170804] (braco_description) JobEnded: {'identifier': 'braco_description', 'rc': 0}
+[0.172481] (manipulator_gazebo) CommandEnded: {'returncode': 0}
+[0.180793] (manipulator_msgs) StdoutLine: {'line': b'[ 70%] Built target manipulator_msgs\n'}
+[0.194521] (manipulator_gazebo) JobEnded: {'identifier': 'manipulator_gazebo', 'rc': 0}
+[0.199492] (-) TimerEvent: {}
+[0.202699] (manipulator_msgs) StdoutLine: {'line': b'[ 74%] Built target manipulator_msgs__py\n'}
+[0.226118] (manipulator_msgs) StdoutLine: {'line': b'[ 80%] Built target manipulator_msgs__rosidl_generator_py\n'}
+[0.247434] (manipulator_msgs) StdoutLine: {'line': b'[ 93%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.247656] (manipulator_msgs) StdoutLine: {'line': b'[ 93%] Built target manipulator_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.249683] (manipulator_msgs) StdoutLine: {'line': b'[100%] Built target manipulator_msgs__rosidl_typesupport_c__pyext\n'}
+[0.299573] (-) TimerEvent: {}
+[0.399808] (-) TimerEvent: {}
+[0.412973] (manipulator_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.413868] (manipulator_msgs) StdoutLine: {'line': b'writing manipulator_msgs.egg-info/PKG-INFO\n'}
+[0.414081] (manipulator_msgs) StdoutLine: {'line': b'writing dependency_links to manipulator_msgs.egg-info/dependency_links.txt\n'}
+[0.414278] (manipulator_msgs) StdoutLine: {'line': b'writing top-level names to manipulator_msgs.egg-info/top_level.txt\n'}
+[0.416326] (manipulator_msgs) StdoutLine: {'line': b"reading manifest file 'manipulator_msgs.egg-info/SOURCES.txt'\n"}
+[0.416937] (manipulator_msgs) StdoutLine: {'line': b"writing manifest file 'manipulator_msgs.egg-info/SOURCES.txt'\n"}
+[0.447750] (manipulator_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_manipulator_msgs_egg\n'}
+[0.459156] (manipulator_msgs) CommandEnded: {'returncode': 0}
+[0.459761] (manipulator_msgs) JobProgress: {'identifier': 'manipulator_msgs', 'progress': 'install'}
+[0.459993] (manipulator_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/host/ros_ws/build/manipulator_msgs'], 'cwd': '/home/host/ros_ws/build/manipulator_msgs', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/manipulator_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[0.467348] (manipulator_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.467881] (manipulator_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.468105] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/rosidl_interfaces/manipulator_msgs\n'}
+[0.468517] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.468682] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/apply_disturbance.h\n'}
+[0.468809] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__functions.h\n'}
+[0.468911] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__struct.h\n'}
+[0.469004] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__type_support.h\n'}
+[0.469162] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/library_path.sh\n'}
+[0.469330] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/library_path.dsv\n'}
+[0.469943] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.470088] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_fastrtps_c.h\n'}
+[0.470441] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.470562] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_introspection_c.h\n'}
+[0.470951] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.471068] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/apply_disturbance.hpp\n'}
+[0.471185] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__builder.hpp\n'}
+[0.471347] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__struct.hpp\n'}
+[0.471473] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__traits.hpp\n'}
+[0.471584] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__type_support.hpp\n'}
+[0.472311] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.472563] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.473089] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.473301] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/pythonpath.sh\n'}
+[0.473444] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/pythonpath.dsv\n'}
+[0.473938] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.474074] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.474193] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.474301] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.475163] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/__init__.py\n'}
+[0.475329] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.475501] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.475677] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.475870] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/libmanipulator_msgs__rosidl_generator_py.so\n'}
+[0.475987] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.476099] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.476207] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.476476] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv/__init__.py\n'}
+[0.476627] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv/_apply_disturbance.py\n'}
+[0.476739] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv/_apply_disturbance_s.c\n'}
+[0.476963] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.477218] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.477469] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.477661] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance.idl\n'}
+[0.477817] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance.srv\n'}
+[0.477972] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance_Request.msg\n'}
+[0.478123] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance_Response.msg\n'}
+[0.478287] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/package_run_dependencies/manipulator_msgs\n'}
+[0.478451] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/parent_prefix_path/manipulator_msgs\n'}
+[0.478614] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/ament_prefix_path.sh\n'}
+[0.478796] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/ament_prefix_path.dsv\n'}
+[0.478965] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/path.sh\n'}
+[0.479133] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/path.dsv\n'}
+[0.479299] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.bash\n'}
+[0.479464] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.sh\n'}
+[0.479624] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.zsh\n'}
+[0.479787] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.dsv\n'}
+[0.479919] (manipulator_msgs) StdoutLine: {'line': b'-- Symlinking: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.dsv\n'}
+[0.488586] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/packages/manipulator_msgs\n'}
+[0.488789] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.488945] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.489134] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.489342] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.489748] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.490026] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.490206] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.490385] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgsConfig.cmake\n'}
+[0.490509] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgsConfig-version.cmake\n'}
+[0.490702] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.xml\n'}
+[0.490945] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_c.so\n'}
+[0.491283] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.491691] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.492050] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_c.so\n'}
+[0.492411] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.492762] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.493038] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_cpp.so\n'}
+[0.499893] (-) TimerEvent: {}
+[0.527748] (manipulator_msgs) StdoutLine: {'line': b"Listing '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs'...\n"}
+[0.527922] (manipulator_msgs) StdoutLine: {'line': b"Listing '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv'...\n"}
+[0.532551] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_py.so\n'}
+[0.532744] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cExport.cmake\n'}
+[0.532908] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.533028] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.533155] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.533256] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.533371] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.533467] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.533605] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.533730] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.533855] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.533927] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.533994] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.534060] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.534124] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.534188] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.534251] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.534315] (manipulator_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.535812] (manipulator_msgs) CommandEnded: {'returncode': 0}
+[0.553924] (manipulator_msgs) JobEnded: {'identifier': 'manipulator_msgs', 'rc': 0}
+[0.555021] (manipulator_disturbance_control) JobStarted: {'identifier': 'manipulator_disturbance_control'}
+[0.564398] (manipulator_disturbance_control) JobProgress: {'identifier': 'manipulator_disturbance_control', 'progress': 'cmake'}
+[0.565044] (manipulator_disturbance_control) JobProgress: {'identifier': 'manipulator_disturbance_control', 'progress': 'build'}
+[0.565324] (manipulator_disturbance_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/host/ros_ws/build/manipulator_disturbance_control', '--', '-j8', '-l8'], 'cwd': '/home/host/ros_ws/build/manipulator_disturbance_control', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/manipulator_disturbance_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[0.594197] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.599992] (-) TimerEvent: {}
+[0.700255] (-) TimerEvent: {}
+[0.738051] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.746927] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.779527] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.782410] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.788571] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.799811] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800314] (-) TimerEvent: {}
+[0.814005] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.849561] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.851223] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900518] (-) TimerEvent: {}
+[0.971335] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.000642] (-) TimerEvent: {}
+[1.029886] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.030265] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.046160] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[1.087999] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.100737] (-) TimerEvent: {}
+[1.132975] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found manipulator_msgs: 1.0.0 (/home/host/onda/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake)\n'}
+[1.149382] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.200830] (-) TimerEvent: {}
+[1.251978] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.255655] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.257575] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.264715] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.300913] (-) TimerEvent: {}
+[1.344064] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.345792] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.346305] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.346419] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.347679] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.347786] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.348098] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.348672] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.349119] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.350405] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.350561] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.350851] (manipulator_disturbance_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.351917] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.372399] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Generating done\n'}
+[1.380399] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Build files have been written to: /home/host/ros_ws/build/manipulator_disturbance_control\n'}
+[1.401046] (-) TimerEvent: {}
+[1.406147] (manipulator_disturbance_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_disturbance_client\x1b[0m\n'}
+[1.406686] (manipulator_disturbance_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target disturbance_applier_node\x1b[0m\n'}
+[1.425149] (manipulator_disturbance_control) StdoutLine: {'line': b'[ 50%] Built target test_disturbance_client\n'}
+[1.427860] (manipulator_disturbance_control) StdoutLine: {'line': b'[100%] Built target disturbance_applier_node\n'}
+[1.438319] (manipulator_disturbance_control) CommandEnded: {'returncode': 0}
+[1.439110] (manipulator_disturbance_control) JobProgress: {'identifier': 'manipulator_disturbance_control', 'progress': 'install'}
+[1.440353] (manipulator_disturbance_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/host/ros_ws/build/manipulator_disturbance_control'], 'cwd': '/home/host/ros_ws/build/manipulator_disturbance_control', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/manipulator_disturbance_control'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble')]), 'shell': False}
+[1.447335] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.448041] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.448314] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/disturbance_applier_node\n'}
+[1.448476] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client\n'}
+[1.448659] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client.py\n'}
+[1.448761] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/interactive_trajectory_maker.py\n'}
+[1.448854] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Symlinking: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/trajectory_recorder.py\n'}
+[1.456918] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/disturbance_control.launch\n'}
+[1.457257] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_control.launch\n'}
+[1.457451] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_demo.launch\n'}
+[1.457646] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_disturbance_test.launch\n'}
+[1.457818] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_maker.launch.py\n'}
+[1.458282] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control\n'}
+[1.458503] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control\n'}
+[1.458715] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.sh\n'}
+[1.458889] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.dsv\n'}
+[1.459080] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.sh\n'}
+[1.459255] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.dsv\n'}
+[1.459422] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.bash\n'}
+[1.459593] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.sh\n'}
+[1.459760] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.zsh\n'}
+[1.459924] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.dsv\n'}
+[1.460058] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Symlinking: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.dsv\n'}
+[1.467559] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/packages/manipulator_disturbance_control\n'}
+[1.467775] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig.cmake\n'}
+[1.467909] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig-version.cmake\n'}
+[1.468140] (manipulator_disturbance_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.xml\n'}
+[1.469950] (manipulator_disturbance_control) CommandEnded: {'returncode': 0}
+[1.484810] (manipulator_disturbance_control) JobEnded: {'identifier': 'manipulator_disturbance_control', 'rc': 0}
+[1.485576] (-) EventReactorShutdown: {}

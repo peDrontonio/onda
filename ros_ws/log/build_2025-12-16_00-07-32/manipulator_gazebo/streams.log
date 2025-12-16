@@ -1,0 +1,109 @@
+[0.017s] Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_gazebo -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_gazebo
+[0.047s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.210s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.219s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.259s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.261s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.267s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.278s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.293s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.338s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.341s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.492s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.604s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.641s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.645s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.655s] -- Searching for dependencies of ignition-math6
+[0.657s] -- Looking for OGRE...
+[0.663s] -- Found Ogre Ghadamon (1.9.0)
+[0.663s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.675s] -- Looking for OGRE_Paging...
+[0.675s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.675s] -- Looking for OGRE_Terrain...
+[0.675s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.675s] -- Looking for OGRE_Property...
+[0.675s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.675s] -- Looking for OGRE_RTShaderSystem...
+[0.675s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.676s] -- Looking for OGRE_Volume...
+[0.676s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.676s] -- Looking for OGRE_Overlay...
+[0.676s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.789s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.790s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.791s] -- Searching for dependencies of ignition-transport8
+[0.813s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.827s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.832s] -- Checking for module 'libzmq >= 4'
+[0.842s] --   Found libzmq , version 4.3.4
+[0.872s] -- Checking for module 'uuid'
+[0.882s] --   Found uuid, version 2.37.2
+[0.909s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.910s] -- Searching for dependencies of ignition-msgs5
+[0.932s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.937s] -- Checking for module 'tinyxml2'
+[0.947s] --   Found tinyxml2, version 9.0.0
+[0.973s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.974s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.975s] -- Searching for dependencies of ignition-common3
+[0.975s] -- Looking for dlfcn.h - found
+[0.975s] -- Looking for libdl - found
+[0.993s] -- Searching for <ignition-common3> component [graphics]
+[0.994s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.995s] -- Searching for dependencies of ignition-common3-graphics
+[0.995s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.997s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.998s] -- Searching for dependencies of ignition-fuel_tools4
+[1.039s] -- Checking for module 'jsoncpp'
+[1.049s] --   Found jsoncpp, version 1.9.5
+[1.077s] -- Checking for module 'libzip'
+[1.090s] --   Found libzip, version 1.7.3
+[1.116s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.117s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.117s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.120s] -- Gazebo version: 11.10
+[1.122s] -- Found ros2_control: 2.52.2 (/opt/ros/humble/share/ros2_control/cmake)
+[1.122s] -- Found ros2_controllers: 2.50.2 (/opt/ros/humble/share/ros2_controllers/cmake)
+[1.123s] -- Found controller_manager: 2.52.2 (/opt/ros/humble/share/controller_manager/cmake)
+[1.337s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.342s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.344s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.419s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[1.420s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.492s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.495s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.495s] -- Added test 'lint_cmake' to check CMake code style
+[1.495s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.497s] -- Added test 'xmllint' to check XML markup files
+[1.498s] -- Configuring done
+[1.506s] -- Generating done
+[1.511s] -- Build files have been written to: /home/host/ros_ws/build/manipulator_gazebo
+[1.526s] Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_gazebo -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_gazebo
+[1.528s] Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_gazebo -- -j8 -l8
+[1.575s] Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_gazebo -- -j8 -l8
+[1.577s] Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_gazebo
+[1.583s] -- Install configuration: ""
+[1.583s] -- Execute custom install script
+[1.584s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/launch/complete_system.launch
+[1.594s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/launch/spawn_manipulator.launch
+[1.602s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/urdf/simple_manipulator.urdf.xacro
+[1.611s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/worlds/simple_world.world
+[1.619s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/joint_controllers.yaml
+[1.626s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/joint_controllers_effort.yaml
+[1.634s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/config/pid_gains.yaml
+[1.643s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/package_run_dependencies/manipulator_gazebo
+[1.653s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/parent_prefix_path/manipulator_gazebo
+[1.662s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/ament_prefix_path.sh
+[1.662s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/ament_prefix_path.dsv
+[1.669s] -- Up-to-date symlink: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/path.sh
+[1.670s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/environment/path.dsv
+[1.677s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.bash
+[1.685s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.sh
+[1.694s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.zsh
+[1.701s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/local_setup.dsv
+[1.710s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.dsv
+[1.719s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/ament_index/resource_index/packages/manipulator_gazebo
+[1.726s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/cmake/manipulator_gazeboConfig.cmake
+[1.734s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/cmake/manipulator_gazeboConfig-version.cmake
+[1.742s] -- Symlinking: /home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.xml
+[1.750s] Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_gazebo

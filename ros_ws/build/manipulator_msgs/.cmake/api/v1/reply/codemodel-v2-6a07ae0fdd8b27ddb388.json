@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4501d6970dc902be80a2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "manipulator_msgs__py",
+					"jsonFile" : "directory-manipulator_msgs__py-c5969069d7b3744cae4e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/host/ros_ws/build/manipulator_msgs/manipulator_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "manipulator_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_manipulator_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_manipulator_msgs_egg-00f9a9ac701faaba8df9.json",
+					"name" : "ament_cmake_python_build_manipulator_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_manipulator_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_manipulator_msgs-239ea19a1ba3463c5e42.json",
+					"name" : "ament_cmake_python_symlink_manipulator_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs-f907ecd299b54a10211e.json",
+					"name" : "manipulator_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__cpp-d51379574900c53ac91a.json",
+					"name" : "manipulator_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "manipulator_msgs__py::@42010003a22a6689cbe3",
+					"jsonFile" : "target-manipulator_msgs__py-8165337d1aca64c5cc40.json",
+					"name" : "manipulator_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_generator_c-ba8122ec04e93566caa9.json",
+					"name" : "manipulator_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_generator_py-1e8e9b8d5119e2eaab71.json",
+					"name" : "manipulator_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_c-d4675f610865842c21fd.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_c__pyext-816f77d97f572721d6d5.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_cpp-8ad983c9ce5ea165e1ba.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_fastrtps_c-49518f315361f0f0e0b8.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext-33718dd7032ffa2abfd0.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_fastrtps_cpp-c173de6cb8a18171f8b9.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_introspection_c-a8dbebf36f5d169a13ff.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_introspection_c__pyext-d8d23a34bd91fa196b1a.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs__rosidl_typesupport_introspection_cpp-f10f77cf2e092f459200.json",
+					"name" : "manipulator_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_msgs_uninstall-6630b9e567f4b6fef22d.json",
+					"name" : "manipulator_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-599f852a2e72206007d3.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/host/ros_ws/build/manipulator_msgs",
+		"source" : "/home/host/ros_ws/src/manipulator_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

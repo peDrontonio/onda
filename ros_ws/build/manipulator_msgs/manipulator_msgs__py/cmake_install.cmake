@@ -1,8 +1,8 @@
-# Install script for directory: /home/host/onda/ros_ws/build/manipulator_msgs/manipulator_msgs__py
+# Install script for directory: /home/host/ros_ws/build/manipulator_msgs/manipulator_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/host/onda/ros_ws/install/manipulator_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/host/ros_ws/install/manipulator_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,0 +1,352 @@
+[0.148s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.148s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fcf8b274160>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fcf8b461b40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fcf8b461b40>>, mixin_verb=('build',))
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.317s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/host/ros_ws'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'ros'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extensions ['cmake', 'python']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'cmake'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'python'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extensions ['python_setup_py']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description) by extension 'python_setup_py'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extensions ['cmake', 'python']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'cmake'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'python'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extensions ['python_setup_py']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(Braço_description/urdf) by extension 'python_setup_py'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/braco_description) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'src/braco_description' with type 'ros.ament_cmake' and name 'braco_description'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_disturbance_control) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_disturbance_control' with type 'ros.ament_cmake' and name 'manipulator_disturbance_control'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_gazebo) by extension 'ros'
+[0.341s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_gazebo' with type 'ros.ament_cmake' and name 'manipulator_gazebo'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'ros'
+[0.342s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_msgs' with type 'ros.ament_cmake' and name 'manipulator_msgs'
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'cmake_target' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'braco_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.364s] DEBUG:colcon.colcon_core.verb:Building package 'braco_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/host/ros_ws/build/braco_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/host/ros_ws/install/braco_description', 'merge_install': False, 'path': '/home/host/ros_ws/src/braco_description', 'symlink_install': False, 'test_result_base': None}
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/host/ros_ws/build/manipulator_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/host/ros_ws/install/manipulator_gazebo', 'merge_install': False, 'path': '/home/host/ros_ws/src/manipulator_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/host/ros_ws/build/manipulator_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/host/ros_ws/install/manipulator_msgs', 'merge_install': False, 'path': '/home/host/ros_ws/src/manipulator_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'cmake_target' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.367s] Level 5:colcon.colcon_core.verb:set package 'manipulator_disturbance_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.367s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_disturbance_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/host/ros_ws/build/manipulator_disturbance_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/host/ros_ws/install/manipulator_disturbance_control', 'merge_install': False, 'path': '/home/host/ros_ws/src/manipulator_disturbance_control', 'symlink_install': False, 'test_result_base': None}
+[0.367s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.369s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.369s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/host/ros_ws/src/manipulator_msgs' with build type 'ament_cmake'
+[0.369s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/host/ros_ws/src/manipulator_msgs'
+[0.371s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/host/ros_ws/src/braco_description' with build type 'ament_cmake'
+[0.387s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/host/ros_ws/src/braco_description'
+[0.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.395s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/host/ros_ws/src/manipulator_gazebo' with build type 'ament_cmake'
+[0.395s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/host/ros_ws/src/manipulator_gazebo'
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_msgs -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_msgs
+[0.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/braco_description -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/braco_description
+[0.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_gazebo -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_gazebo
+[0.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/braco_description -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/braco_description
+[0.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j8 -l8
+[0.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j8 -l8
+[0.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/braco_description
+[1.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(braco_description)
+[1.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/braco_description
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description' for CMake module files
+[1.094s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description' for CMake config files
+[1.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('braco_description', 'cmake_prefix_path')
+[1.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/braco_description/share/braco_description/hook/cmake_prefix_path.ps1'
+[1.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/braco_description/share/braco_description/hook/cmake_prefix_path.dsv'
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/braco_description/share/braco_description/hook/cmake_prefix_path.sh'
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/bin'
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/lib/pkgconfig/braco_description.pc'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/lib/python3.10/site-packages'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/bin'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.ps1'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/host/ros_ws/install/braco_description/share/braco_description/package.dsv'
+[1.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.sh'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.bash'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.zsh'
+[1.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/host/ros_ws/install/braco_description/share/colcon-core/packages/braco_description)
+[1.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(braco_description)
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description' for CMake module files
+[1.106s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description' for CMake config files
+[1.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('braco_description', 'cmake_prefix_path')
+[1.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/braco_description/share/braco_description/hook/cmake_prefix_path.ps1'
+[1.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/braco_description/share/braco_description/hook/cmake_prefix_path.dsv'
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/braco_description/share/braco_description/hook/cmake_prefix_path.sh'
+[1.109s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/bin'
+[1.109s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/lib/pkgconfig/braco_description.pc'
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/lib/python3.10/site-packages'
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/braco_description/bin'
+[1.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.ps1'
+[1.112s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/host/ros_ws/install/braco_description/share/braco_description/package.dsv'
+[1.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.sh'
+[1.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.bash'
+[1.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/braco_description/share/braco_description/package.zsh'
+[1.114s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/host/ros_ws/install/braco_description/share/colcon-core/packages/braco_description)
+[1.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_msgs -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_msgs
+[1.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_msgs -- -j8 -l8
+[1.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_gazebo -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_gazebo
+[1.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_gazebo -- -j8 -l8
+[1.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_gazebo -- -j8 -l8
+[1.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_gazebo
+[2.145s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_gazebo)
+[2.145s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo' for CMake module files
+[2.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_gazebo
+[2.146s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo' for CMake config files
+[2.146s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_gazebo', 'cmake_prefix_path')
+[2.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/hook/cmake_prefix_path.ps1'
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/hook/cmake_prefix_path.dsv'
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/hook/cmake_prefix_path.sh'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/bin'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/lib/pkgconfig/manipulator_gazebo.pc'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/lib/python3.10/site-packages'
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/bin'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.ps1'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.dsv'
+[2.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.sh'
+[2.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.bash'
+[2.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.zsh'
+[2.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/host/ros_ws/install/manipulator_gazebo/share/colcon-core/packages/manipulator_gazebo)
+[2.151s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_gazebo)
+[2.151s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo' for CMake module files
+[2.152s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo' for CMake config files
+[2.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_gazebo', 'cmake_prefix_path')
+[2.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/hook/cmake_prefix_path.ps1'
+[2.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/hook/cmake_prefix_path.dsv'
+[2.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/hook/cmake_prefix_path.sh'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/bin'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/lib/pkgconfig/manipulator_gazebo.pc'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/lib/python3.10/site-packages'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_gazebo/bin'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.ps1'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.dsv'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.sh'
+[2.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.bash'
+[2.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_gazebo/share/manipulator_gazebo/package.zsh'
+[2.157s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/host/ros_ws/install/manipulator_gazebo/share/colcon-core/packages/manipulator_gazebo)
+[4.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_msgs -- -j8 -l8
+[4.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_msgs
+[4.774s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_msgs)
+[4.774s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs' for CMake module files
+[4.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_msgs
+[4.775s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs' for CMake config files
+[4.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'cmake_prefix_path')
+[4.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.ps1'
+[4.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.dsv'
+[4.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.sh'
+[4.777s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/lib'
+[4.777s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'ld_library_path_lib')
+[4.777s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.ps1'
+[4.777s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.dsv'
+[4.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.sh'
+[4.778s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/bin'
+[4.778s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/lib/pkgconfig/manipulator_msgs.pc'
+[4.778s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/lib/python3.10/site-packages'
+[4.779s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/bin'
+[4.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.ps1'
+[4.780s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.dsv'
+[4.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.sh'
+[4.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.bash'
+[4.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.zsh'
+[4.782s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/host/ros_ws/install/manipulator_msgs/share/colcon-core/packages/manipulator_msgs)
+[4.783s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_msgs)
+[4.783s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs' for CMake module files
+[4.784s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs' for CMake config files
+[4.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'cmake_prefix_path')
+[4.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.ps1'
+[4.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.dsv'
+[4.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.sh'
+[4.786s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/lib'
+[4.787s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'ld_library_path_lib')
+[4.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.ps1'
+[4.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.dsv'
+[4.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.sh'
+[4.788s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/bin'
+[4.788s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/lib/pkgconfig/manipulator_msgs.pc'
+[4.788s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/lib/python3.10/site-packages'
+[4.788s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_msgs/bin'
+[4.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.ps1'
+[4.789s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.dsv'
+[4.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.sh'
+[4.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.bash'
+[4.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.zsh'
+[4.791s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/host/ros_ws/install/manipulator_msgs/share/colcon-core/packages/manipulator_msgs)
+[4.791s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/host/ros_ws/src/manipulator_disturbance_control' with build type 'ament_cmake'
+[4.791s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/host/ros_ws/src/manipulator_disturbance_control'
+[4.792s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.792s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_disturbance_control -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control
+[5.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '0': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/src/manipulator_disturbance_control -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control
+[5.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8
+[12.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '0': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8
+[12.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_disturbance_control
+[12.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '1': CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_disturbance_control
+[12.939s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_disturbance_control)
+[12.939s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_disturbance_control' for CMake module files
+[12.939s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_disturbance_control' for CMake config files
+[12.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_disturbance_control', 'cmake_prefix_path')
+[12.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/hook/cmake_prefix_path.ps1'
+[12.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/hook/cmake_prefix_path.dsv'
+[12.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/hook/cmake_prefix_path.sh'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_disturbance_control/lib'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_disturbance_control/bin'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_disturbance_control/lib/pkgconfig/manipulator_disturbance_control.pc'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_disturbance_control/lib/python3.10/site-packages'
+[12.942s] Level 1:colcon.colcon_core.environment:checking '/home/host/ros_ws/install/manipulator_disturbance_control/bin'
+[12.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.ps1'
+[12.943s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.dsv'
+[12.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.sh'
+[12.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.bash'
+[12.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.zsh'
+[12.945s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/host/ros_ws/install/manipulator_disturbance_control/share/colcon-core/packages/manipulator_disturbance_control)
+[12.955s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.955s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.956s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[12.956s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[12.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.963s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.963s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.966s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[12.966s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.967s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/host/ros_ws/install/local_setup.ps1'
+[12.968s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/host/ros_ws/install/_local_setup_util_ps1.py'
+[12.969s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/host/ros_ws/install/setup.ps1'
+[12.971s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/host/ros_ws/install/local_setup.sh'
+[12.971s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/host/ros_ws/install/_local_setup_util_sh.py'
+[12.972s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/host/ros_ws/install/setup.sh'
+[12.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/host/ros_ws/install/local_setup.bash'
+[12.974s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/host/ros_ws/install/setup.bash'
+[12.976s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/host/ros_ws/install/local_setup.zsh'
+[12.976s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/host/ros_ws/install/setup.zsh'
