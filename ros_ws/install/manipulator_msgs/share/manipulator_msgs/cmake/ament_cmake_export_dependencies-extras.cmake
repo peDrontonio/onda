@@ -1,0 +1,1 @@
+/home/host/onda/ros_ws/build/manipulator_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

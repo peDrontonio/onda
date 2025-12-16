@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "manipulator_msgs__py",
+		"source" : "/home/host/onda/ros_ws/build/manipulator_msgs/manipulator_msgs__py"
+	}
+}

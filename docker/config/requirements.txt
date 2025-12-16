@@ -1,0 +1,12 @@
+numpy
+roboticstoolbox-python
+spatialmath-python
+spatialgeometry
+scipy
+matplotlib
+ipython
+jupyter
+jupyterlab
+pyyaml
+requests
+websockets

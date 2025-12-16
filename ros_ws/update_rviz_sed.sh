@@ -1,0 +1,22 @@
+#!/bin/bash
+FILE="/home/host/onda/ros_ws/src/braco_description/launch/urdf.rviz"
+
+sed -i 's|Class: rviz/Displays|Class: rviz_common/Displays|g' "$FILE"
+sed -i 's|Class: rviz/Selection|Class: rviz_common/Selection|g' "$FILE"
+sed -i 's|Class: rviz/Tool Properties|Class: rviz_common/Tool Properties|g' "$FILE"
+sed -i 's|Class: rviz/Views|Class: rviz_common/Views|g' "$FILE"
+sed -i 's|Class: rviz/Time|Class: rviz_common/Time|g' "$FILE"
+sed -i 's|Class: rviz/Grid|Class: rviz_default_plugins/Grid|g' "$FILE"
+sed -i 's|Class: rviz/RobotModel|Class: rviz_default_plugins/RobotModel|g' "$FILE"
+sed -i 's|Class: rviz/TF|Class: rviz_default_plugins/TF|g' "$FILE"
+sed -i 's|Class: rviz/Orbit|Class: rviz_default_plugins/Orbit|g' "$FILE"
+sed -i 's|Class: rviz/Interact|Class: rviz_default_plugins/Interact|g' "$FILE"
+sed -i 's|Class: rviz/MoveCamera|Class: rviz_default_plugins/MoveCamera|g' "$FILE"
+sed -i 's|Class: rviz/Select|Class: rviz_default_plugins/Select|g' "$FILE"
+sed -i 's|Class: rviz/FocusCamera|Class: rviz_default_plugins/FocusCamera|g' "$FILE"
+sed -i 's|Class: rviz/Measure|Class: rviz_default_plugins/Measure|g' "$FILE"
+sed -i 's|Class: rviz/SetInitialPose|Class: rviz_default_plugins/SetInitialPose|g' "$FILE"
+sed -i 's|Class: rviz/SetGoal|Class: rviz_default_plugins/SetGoal|g' "$FILE"
+sed -i 's|Class: rviz/PublishPoint|Class: rviz_default_plugins/PublishPoint|g' "$FILE"
+
+echo "Updated urdf.rviz using sed"

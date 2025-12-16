@@ -1,0 +1,1 @@
+/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

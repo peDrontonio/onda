@@ -1,0 +1,1 @@
+/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_generator_cpp/manipulator_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

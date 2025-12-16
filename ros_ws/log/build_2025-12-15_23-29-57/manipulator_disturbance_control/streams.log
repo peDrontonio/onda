@@ -1,0 +1,93 @@
+[0.007s] Invoking command in '/home/host/onda/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/onda/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/onda/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/onda/ros_ws/src/manipulator_disturbance_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/host/onda/ros_ws/install/manipulator_disturbance_control
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.131s] -- The CXX compiler identification is GNU 11.4.0
+[0.135s] -- Detecting C compiler ABI info
+[0.203s] -- Detecting C compiler ABI info - done
+[0.208s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.208s] -- Detecting C compile features
+[0.208s] -- Detecting C compile features - done
+[0.210s] -- Detecting CXX compiler ABI info
+[0.286s] -- Detecting CXX compiler ABI info - done
+[0.291s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.291s] -- Detecting CXX compile features
+[0.291s] -- Detecting CXX compile features - done
+[0.294s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.400s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.440s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.470s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.501s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.504s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.511s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.519s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.532s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.564s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.567s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.643s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.664s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.696s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.703s] -- Looking for pthread.h
+[0.790s] -- Looking for pthread.h - found
+[0.791s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.863s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.864s] -- Found Threads: TRUE  
+[0.898s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.900s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.908s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.931s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.952s] -- Found manipulator_msgs: 1.0.0 (/home/host/onda/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake)
+[0.962s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.028s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.041s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.041s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.041s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.046s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.100s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.101s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.101s] -- Configured cppcheck include dirs: 
+[1.101s] -- Configured cppcheck exclude dirs and/or files: 
+[1.102s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.102s] -- Configured cpplint exclude dirs and/or files: 
+[1.102s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.103s] -- Added test 'lint_cmake' to check CMake code style
+[1.103s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.104s] -- Added test 'uncrustify' to check C / C++ code style
+[1.104s] -- Configured uncrustify additional arguments: 
+[1.104s] -- Added test 'xmllint' to check XML markup files
+[1.105s] -- Configuring done
+[1.115s] -- Generating done
+[1.118s] -- Build files have been written to: /home/host/onda/ros_ws/build/manipulator_disturbance_control
+[1.125s] Invoked command in '/home/host/onda/ros_ws/build/manipulator_disturbance_control' returned '0': AMENT_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/onda/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/onda/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/onda/ros_ws/src/manipulator_disturbance_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/host/onda/ros_ws/install/manipulator_disturbance_control
+[1.126s] Invoking command in '/home/host/onda/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/onda/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/onda/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/host/onda/ros_ws/build/manipulator_disturbance_control -- -j20 -l20
+[1.167s] [ 50%] [32mBuilding CXX object CMakeFiles/disturbance_applier_node.dir/src/disturbance_applier_node.cpp.o[0m
+[1.167s] [ 50%] [32mBuilding CXX object CMakeFiles/test_disturbance_client.dir/src/test_disturbance_client.cpp.o[0m
+[3.187s] [ 75%] [32m[1mLinking CXX executable test_disturbance_client[0m
+[3.294s] [ 75%] Built target test_disturbance_client
+[4.885s] [100%] [32m[1mLinking CXX executable disturbance_applier_node[0m
+[5.068s] [100%] Built target disturbance_applier_node
+[5.079s] Invoked command in '/home/host/onda/ros_ws/build/manipulator_disturbance_control' returned '0': AMENT_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/onda/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/onda/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/host/onda/ros_ws/build/manipulator_disturbance_control -- -j20 -l20
+[5.080s] Invoking command in '/home/host/onda/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/onda/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/onda/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/host/onda/ros_ws/build/manipulator_disturbance_control
+[5.084s] -- Install configuration: ""
+[5.084s] -- Execute custom install script
+[5.084s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/disturbance_applier_node
+[5.091s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client
+[5.099s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client.py
+[5.106s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/disturbance_control.launch
+[5.114s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_control.launch
+[5.124s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_demo.launch
+[5.135s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_disturbance_test.launch
+[5.150s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control
+[5.165s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control
+[5.178s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.sh
+[5.185s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.dsv
+[5.189s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.sh
+[5.194s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.dsv
+[5.200s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.bash
+[5.208s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.sh
+[5.218s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.zsh
+[5.227s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.dsv
+[5.233s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.dsv
+[5.238s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/packages/manipulator_disturbance_control
+[5.249s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig.cmake
+[5.266s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig-version.cmake
+[5.284s] -- Symlinking: /home/host/onda/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.xml
+[5.304s] Invoked command in '/home/host/onda/ros_ws/build/manipulator_disturbance_control' returned '0': AMENT_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/onda/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/onda/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/onda/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/host/onda/ros_ws/build/manipulator_disturbance_control

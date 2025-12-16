@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from manipulator_msgs/srv/ApplyDisturbance.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Vector3.idl"
+
+module manipulator_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service to apply/remove external disturbance forces on the manipulator" "\n"
+      "Request: force to apply in world frame (Newton)")
+    struct ApplyDisturbance_Request {
+      geometry_msgs::msg::Vector3 force;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct ApplyDisturbance_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

@@ -1,0 +1,251 @@
+<?xml version="1.0" ?>
+<robot name="Braco" >
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+<transmission name="base_rot1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="base_rot1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="base_rot1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="rot1_rot2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rot1_rot2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rot1_rot2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="rot2_rot3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rot2_rot3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rot2_rot3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="rot3_prism1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rot3_prism1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rot3_prism1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="prism1_rot4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="prism1_rot4">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="prism1_rot4_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo>
+  <plugin name="control" filename="libgazebo_ros_control.so"/>
+</gazebo>
+<gazebo reference="base_link">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+  <gravity>true</gravity>
+</gazebo>
+<gazebo reference="rot1_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+<gazebo reference="rot2_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+<gazebo reference="rot3_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+<gazebo reference="prism1_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+<gazebo reference="rot4_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 9.341702626166154e-18 0.016604912357786914" rpy="0 0 0"/>
+    <mass value="1.910661710885449"/>
+    <inertia ixx="0.001266" iyy="0.001266" izz="0.002136" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<link name="rot1_1">
+  <inertial>
+    <origin xyz="0.03495844573623028 5.213774500108194e-18 0.05110255285233073" rpy="0 0 0"/>
+    <mass value="6.846799193913478"/>
+    <inertia ixx="0.008499" iyy="0.014211" izz="0.012644" ixy="0.0" iyz="0.0" ixz="-0.003177"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<link name="rot2_1">
+  <inertial>
+    <origin xyz="0.058396495772356144 0.03396073478050104 9.71445146547012e-17" rpy="0 0 0"/>
+    <mass value="7.274378802825201"/>
+    <inertia ixx="0.013244" iyy="0.010621" izz="0.0165" ixy="-0.004538" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1 -0.0 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1 -0.0 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<link name="rot3_1">
+  <inertial>
+    <origin xyz="-0.10657961060810778 0.06809817377105873 1.3877787807814457e-16" rpy="0 0 0"/>
+    <mass value="14.513248405934725"/>
+    <inertia ixx="0.03844" iyy="0.082008" izz="0.104578" ixy="0.027942" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.18 -0.1 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.18 -0.1 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<link name="prism1_1">
+  <inertial>
+    <origin xyz="3.460374717706296e-15 0.09473819302531211 -3.734064336902154e-08" rpy="0 0 0"/>
+    <mass value="4.193505859169914"/>
+    <inertia ixx="0.013603" iyy="0.001851" izz="0.013596" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.2 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/prism1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.2 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/prism1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<link name="rot4_1">
+  <inertial>
+    <origin xyz="3.7807344132643824e-08 0.06101258873148452 8.144494703654637e-09" rpy="0 0 0"/>
+    <mass value="0.6545383836152304"/>
+    <inertia ixx="0.000733" iyy="0.000283" izz="0.00088" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.365 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.365 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/rot4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<joint name="base_rot1" type="revolute">
+  <origin xyz="0.0 0.0 0.035" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rot1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+</joint>
+<joint name="rot1_rot2" type="revolute">
+  <origin xyz="0.1 0.0 0.065" rpy="0 0 0"/>
+  <parent link="rot1_1"/>
+  <child link="rot2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+</joint>
+<joint name="rot2_rot3" type="revolute">
+  <origin xyz="0.08 0.1 0.0" rpy="0 0 0"/>
+  <parent link="rot2_1"/>
+  <child link="rot3_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+</joint>
+<joint name="rot3_prism1" type="prismatic">
+  <origin xyz="-0.18 0.1 0.0" rpy="0 0 0"/>
+  <parent link="rot3_1"/>
+  <child link="prism1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="0.1" lower="0.0" effort="100" velocity="100"/>
+</joint>
+<joint name="prism1_rot4" type="revolute">
+  <origin xyz="0.0 0.165 0.0" rpy="0 0 0"/>
+  <parent link="prism1_1"/>
+  <child link="rot4_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="1.047198" lower="-1.047198" effort="100" velocity="100"/>
+</joint>
+</robot>

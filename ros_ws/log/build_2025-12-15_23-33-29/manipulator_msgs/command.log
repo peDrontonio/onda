@@ -1,0 +1,4 @@
+Invoking command in '/home/host/onda/ros_ws/build/manipulator_msgs': /usr/bin/cmake --build /home/host/onda/ros_ws/build/manipulator_msgs -- -j20 -l20
+Invoked command in '/home/host/onda/ros_ws/build/manipulator_msgs' returned '0': /usr/bin/cmake --build /home/host/onda/ros_ws/build/manipulator_msgs -- -j20 -l20
+Invoking command in '/home/host/onda/ros_ws/build/manipulator_msgs': /usr/bin/cmake --install /home/host/onda/ros_ws/build/manipulator_msgs
+Invoked command in '/home/host/onda/ros_ws/build/manipulator_msgs' returned '0': /usr/bin/cmake --install /home/host/onda/ros_ws/build/manipulator_msgs

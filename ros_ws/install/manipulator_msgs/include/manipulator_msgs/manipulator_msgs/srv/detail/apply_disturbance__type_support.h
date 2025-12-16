@@ -1,0 +1,1 @@
+/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/srv/detail/apply_disturbance__type_support.h

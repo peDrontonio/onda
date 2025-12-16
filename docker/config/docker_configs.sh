@@ -8,7 +8,7 @@ TOOLSFILE=docker/config/tools.sh
 IMAGENAME=$WORKREPO
 IMAGETAG=humble
 DOCKERFILE=docker/Dockerfile.roshumble
-CONTAINERNAME=$WORKREPO_container
+CONTAINERNAME=${WORKREPO}_container
 
 # Container configs
 USERNAME=host

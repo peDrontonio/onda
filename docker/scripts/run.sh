@@ -59,6 +59,7 @@ docker run -it \
     --device /dev/video0 \
     -v /dev/video0:/dev/video0 \
     -v /dev/dri:/dev/dri \
+    -v $PWD:/home/$USERNAME/$WORKREPO \
     -v $PWD/$ROSWS:/home/$USERNAME/$ROSWS \
     -e DISPLAY=$DISPLAY \
     --name $CONTAINERNAME \

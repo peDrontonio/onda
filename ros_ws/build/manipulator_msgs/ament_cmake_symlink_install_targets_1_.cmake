@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/host/onda/ros_ws/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "manipulator_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/manipulator_msgs")
