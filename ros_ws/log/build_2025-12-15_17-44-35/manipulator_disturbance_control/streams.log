@@ -1,0 +1,21 @@
+[0.011s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/ros_ws/manipulator_disturbance_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control
+[0.040s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.041s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.041s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.041s]   CMake did not find one.
+[0.041s] 
+[0.041s]   Could not find a package configuration file provided by "catkin" with any
+[0.041s]   of the following names:
+[0.041s] 
+[0.041s]     catkinConfig.cmake
+[0.042s]     catkin-config.cmake
+[0.042s] 
+[0.042s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.042s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.042s]   provides a separate development package or SDK, be sure it has been
+[0.042s]   installed.
+[0.042s] 
+[0.042s] [0m
+[0.042s] -- Configuring incomplete, errors occurred!
+[0.043s] See also "/home/host/ros_ws/build/manipulator_disturbance_control/CMakeFiles/CMakeOutput.log".
+[0.044s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '1': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/ros_ws/manipulator_disturbance_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control

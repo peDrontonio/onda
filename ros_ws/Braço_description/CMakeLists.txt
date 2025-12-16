@@ -17,10 +17,21 @@ find_package(xacro REQUIRED)
 
 # Install directories
 install(DIRECTORY
-  urdf
-  meshes
-  launch
-  DESTINATION share/${PROJECT_NAME}/
+  urdf/
+  DESTINATION share/${PROJECT_NAME}/urdf
+  FILES_MATCHING PATTERN "*.xacro" PATTERN "*.urdf" PATTERN "*.gazebo" PATTERN "*.trans"
+)
+
+install(DIRECTORY
+  meshes/
+  DESTINATION share/${PROJECT_NAME}/meshes
+  FILES_MATCHING PATTERN "*.stl" PATTERN "*.dae" PATTERN "*.obj"
+)
+
+install(DIRECTORY
+  launch/
+  DESTINATION share/${PROJECT_NAME}/launch
+  FILES_MATCHING PATTERN "*.py" PATTERN "*.launch"
 )
 
 # Install configuration files

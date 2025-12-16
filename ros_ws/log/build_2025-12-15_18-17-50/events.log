@@ -1,0 +1,53 @@
+[0.000000] (-) TimerEvent: {}
+[0.000118] (-) JobUnselected: {'identifier': 'manipulator_disturbance_control'}
+[0.000157] (-) JobUnselected: {'identifier': 'manipulator_gazebo'}
+[0.000182] (-) JobUnselected: {'identifier': 'manipulator_msgs'}
+[0.000208] (braco_description) JobQueued: {'identifier': 'braco_description', 'dependencies': OrderedDict()}
+[0.000235] (braco_description) JobStarted: {'identifier': 'braco_description'}
+[0.021206] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'cmake'}
+[0.021853] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'build'}
+[0.022491] (braco_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/host/ros_ws/build/braco_description', '--', '-j8', '-l8'], 'cwd': '/home/host/ros_ws/build/braco_description', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('OLDPWD', '/home/host/ros_ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/braco_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description')]), 'shell': False}
+[0.056453] (braco_description) CommandEnded: {'returncode': 0}
+[0.057144] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'install'}
+[0.065042] (braco_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/host/ros_ws/build/braco_description'], 'cwd': '/home/host/ros_ws/build/braco_description', 'env': OrderedDict([('HOSTNAME', 'marcotayar-Nitro-AN515-55'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/host/ros_ws/install/manipulator_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('OLDPWD', '/home/host/ros_ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/host/ros_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description:/opt/ros/humble'), ('PWD', '/home/host/ros_ws/build/braco_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/home/host/ros_ws/install/manipulator_disturbance_control:/home/host/ros_ws/install/manipulator_msgs:/home/host/ros_ws/install/manipulator_gazebo:/home/host/ros_ws/install/braco_description')]), 'shell': False}
+[0.071164] (braco_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.071338] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf\n'}
+[0.071451] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.xacro\n'}
+[0.071560] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.gazebo\n'}
+[0.071671] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.trans\n'}
+[0.071743] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/materials.xacro\n'}
+[0.071811] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes\n'}
+[0.071878] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot3_1.stl\n'}
+[0.071984] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/base_link.stl\n'}
+[0.072090] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot2_1.stl\n'}
+[0.072171] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/prism1_1.stl\n'}
+[0.072254] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot4_1.stl\n'}
+[0.072337] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot1_1.stl\n'}
+[0.072418] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch\n'}
+[0.072499] (braco_description) StdoutLine: {'line': b'-- Installing: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch.py\n'}
+[0.072579] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch\n'}
+[0.072656] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/urdf.rviz\n'}
+[0.072736] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.launch\n'}
+[0.072814] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.yaml\n'}
+[0.072906] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch\n'}
+[0.072986] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch.py\n'}
+[0.073066] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/launch/controller.yaml\n'}
+[0.073145] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/launch/urdf.rviz\n'}
+[0.073227] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/package_run_dependencies/braco_description\n'}
+[0.073321] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/parent_prefix_path/braco_description\n'}
+[0.073387] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.sh\n'}
+[0.073460] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.dsv\n'}
+[0.073525] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.sh\n'}
+[0.073590] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.dsv\n'}
+[0.073654] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.bash\n'}
+[0.073719] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.sh\n'}
+[0.073783] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.zsh\n'}
+[0.073854] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.dsv\n'}
+[0.073919] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/package.dsv\n'}
+[0.073984] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/packages/braco_description\n'}
+[0.074048] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig.cmake\n'}
+[0.074112] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig-version.cmake\n'}
+[0.074177] (braco_description) StdoutLine: {'line': b'-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/package.xml\n'}
+[0.074950] (braco_description) CommandEnded: {'returncode': 0}
+[0.091858] (braco_description) JobEnded: {'identifier': 'braco_description', 'rc': 0}
+[0.092402] (-) EventReactorShutdown: {}

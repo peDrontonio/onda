@@ -1,32 +1,44 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(manipulator_gazebo)
 
-find_package(catkin REQUIRED COMPONENTS
-  gazebo_ros
-  gazebo_ros_control
-  controller_manager
-  robot_state_publisher
-  xacro
-)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-catkin_package()
+## Find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package(robot_state_publisher REQUIRED)
+find_package(xacro REQUIRED)
 
 ## Install launch files
 install(DIRECTORY launch/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+  DESTINATION share/${PROJECT_NAME}/launch
 )
 
 ## Install URDF files
 install(DIRECTORY urdf/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/urdf
+  DESTINATION share/${PROJECT_NAME}/urdf
 )
 
 ## Install world files
 install(DIRECTORY worlds/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/worlds
+  DESTINATION share/${PROJECT_NAME}/worlds
 )
 
 ## Install config files
-install(DIRECTORY config/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config
-)
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/config)
+  install(DIRECTORY config/
+    DESTINATION share/${PROJECT_NAME}/config
+  )
+endif()
+
+## Install scripts
+if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/scripts)
+  install(DIRECTORY scripts/
+    DESTINATION share/${PROJECT_NAME}/scripts
+    USE_SOURCE_PERMISSIONS
+  )
+endif()
+
+ament_package()

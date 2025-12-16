@@ -1,0 +1,4 @@
+Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j8 -l8
+Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j8 -l8
+Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/host/ros_ws/build/braco_description
+Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/host/ros_ws/build/braco_description

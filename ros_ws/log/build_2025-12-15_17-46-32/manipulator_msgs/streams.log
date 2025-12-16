@@ -1,0 +1,151 @@
+[0.035s] Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_msgs -- -j8 -l8
+[0.084s] [  3%] Built target manipulator_msgs__cpp
+[0.088s] [ 12%] Built target manipulator_msgs__rosidl_generator_c
+[0.093s] [ 12%] Built target ament_cmake_python_copy_manipulator_msgs
+[0.131s] [ 32%] Built target manipulator_msgs__rosidl_typesupport_cpp
+[0.132s] [ 32%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_cpp
+[0.132s] [ 41%] Built target manipulator_msgs__rosidl_typesupport_c
+[0.132s] [ 51%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_c
+[0.134s] [ 61%] Built target manipulator_msgs__rosidl_typesupport_introspection_c
+[0.134s] [ 70%] Built target manipulator_msgs__rosidl_typesupport_introspection_cpp
+[0.152s] [ 70%] Built target manipulator_msgs
+[0.172s] [ 74%] Built target manipulator_msgs__py
+[0.194s] [ 80%] Built target manipulator_msgs__rosidl_generator_py
+[0.216s] [ 90%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.217s] [ 93%] Built target manipulator_msgs__rosidl_typesupport_introspection_c__pyext
+[0.218s] [100%] Built target manipulator_msgs__rosidl_typesupport_c__pyext
+[0.379s] running egg_info
+[0.379s] writing manipulator_msgs.egg-info/PKG-INFO
+[0.380s] writing dependency_links to manipulator_msgs.egg-info/dependency_links.txt
+[0.380s] writing top-level names to manipulator_msgs.egg-info/top_level.txt
+[0.382s] reading manifest file 'manipulator_msgs.egg-info/SOURCES.txt'
+[0.383s] writing manifest file 'manipulator_msgs.egg-info/SOURCES.txt'
+[0.404s] [100%] Built target ament_cmake_python_build_manipulator_msgs_egg
+[0.416s] Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_msgs -- -j8 -l8
+[0.417s] Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_msgs
+[0.424s] -- Install configuration: ""
+[0.424s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/rosidl_interfaces/manipulator_msgs
+[0.424s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[0.425s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[0.425s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[0.425s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__type_support.h
+[0.425s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__functions.h
+[0.425s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__struct.h
+[0.425s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__functions.c
+[0.426s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/apply_disturbance.h
+[0.426s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[0.426s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.426s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/library_path.sh
+[0.426s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/library_path.dsv
+[0.426s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_c.so
+[0.426s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_fastrtps_c.h
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_c.so
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[0.427s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[0.428s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[0.428s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__type_support.c
+[0.428s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_introspection_c.h
+[0.428s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[0.428s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.428s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_c.so
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_c.so
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__struct.hpp
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__traits.hpp
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__type_support.hpp
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__builder.hpp
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/apply_disturbance.hpp
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[0.429s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_fastrtps_cpp.hpp
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/dds_fastrtps
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[0.430s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__rosidl_typesupport_introspection_cpp.hpp
+[0.431s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/apply_disturbance__type_support.cpp
+[0.431s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_cpp.so
+[0.431s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_cpp.so
+[0.431s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/pythonpath.sh
+[0.431s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/pythonpath.dsv
+[0.431s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info
+[0.431s] -- Installing: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[0.431s] -- Installing: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[0.431s] -- Installing: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[0.431s] -- Installing: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[0.431s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_c.c
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv/_apply_disturbance.py
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv/_apply_disturbance_s.c
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv/__init__.py
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/libmanipulator_msgs__rosidl_generator_py.so
+[0.432s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/__init__.py
+[0.468s] Listing '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs'...
+[0.468s] Listing '/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/srv'...
+[0.473s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.473s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.474s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.474s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_py.so
+[0.474s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance.idl
+[0.475s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance.srv
+[0.475s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance_Request.msg
+[0.475s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/srv/ApplyDisturbance_Response.msg
+[0.475s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/package_run_dependencies/manipulator_msgs
+[0.475s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/parent_prefix_path/manipulator_msgs
+[0.475s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/ament_prefix_path.sh
+[0.475s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/ament_prefix_path.dsv
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/path.sh
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/environment/path.dsv
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.bash
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.sh
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.zsh
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/local_setup.dsv
+[0.476s] -- Installing: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.dsv
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/ament_index/resource_index/packages/manipulator_msgs
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cExport.cmake
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.476s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cExport.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cppExport.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.477s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cppExport.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_pyExport.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake-extras.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.478s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.479s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.479s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.479s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.479s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgsConfig.cmake
+[0.479s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgsConfig-version.cmake
+[0.479s] -- Up-to-date: /home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/package.xml
+[0.482s] Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_msgs

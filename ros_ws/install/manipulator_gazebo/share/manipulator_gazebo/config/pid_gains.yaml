@@ -1,0 +1,43 @@
+gazebo_ros_control:
+  pid_gains:
+    joint_1:
+      p: 0.3125
+      i: 0.00125
+      d: 0.0625
+      i_clamp_max: 0.125
+      i_clamp_min: -0.125
+    
+    joint_2:
+      p: 0.625
+      i: 0.00125
+      d: 0.125
+      i_clamp_max: 0.125
+      i_clamp_min: -0.125
+    
+    joint_3:
+      p: 0.625
+      i: 0.00125
+      d: 0.125
+      i_clamp_max: 0.125
+      i_clamp_min: -0.125
+    
+    joint_4:
+      p: 0.1875
+      i: 0.0005
+      d: 0.0375
+      i_clamp_max: 0.075
+      i_clamp_min: -0.075
+    
+    joint_5:
+      p: 0.1875
+      i: 0.0005
+      d: 0.0375
+      i_clamp_max: 0.075
+      i_clamp_min: -0.075
+    
+    joint_6:
+      p: 0.1875
+      i: 0.0005
+      d: 0.0375
+      i_clamp_max: 0.075
+      i_clamp_min: -0.075

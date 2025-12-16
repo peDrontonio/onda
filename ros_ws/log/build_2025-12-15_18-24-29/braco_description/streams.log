@@ -1,0 +1,67 @@
+[0.022s] Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/host/ros_ws/Braço_description -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/braco_description
+[0.077s] -- The C compiler identification is GNU 11.4.0
+[0.130s] -- The CXX compiler identification is GNU 11.4.0
+[0.137s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.200s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.201s] -- Detecting C compile features - done
+[0.204s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.284s] -- Detecting CXX compile features
+[0.285s] -- Detecting CXX compile features - done
+[0.288s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.436s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.544s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.607s] -- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+[0.611s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.698s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.701s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.701s] -- Added test 'lint_cmake' to check CMake code style
+[0.702s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.703s] -- Added test 'xmllint' to check XML markup files
+[0.704s] -- Configuring done
+[0.708s] -- Generating done
+[0.710s] -- Build files have been written to: /home/host/ros_ws/build/braco_description
+[0.716s] Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/host/ros_ws/Braço_description -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/braco_description
+[0.718s] Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j8 -l8
+[0.754s] Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j8 -l8
+[0.765s] Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/host/ros_ws/build/braco_description
+[0.772s] -- Install configuration: ""
+[0.772s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/urdf
+[0.772s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/urdf/braco.xacro
+[0.772s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/urdf/braco.gazebo
+[0.773s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/urdf/braco.trans
+[0.773s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/urdf/materials.xacro
+[0.773s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/meshes
+[0.773s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/meshes/rot3_1.stl
+[0.773s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/meshes/base_link.stl
+[0.774s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/meshes/rot2_1.stl
+[0.774s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/meshes/prism1_1.stl
+[0.774s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/meshes/rot4_1.stl
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/meshes/rot1_1.stl
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch/gazebo.launch.py
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch/display.launch
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch/controller.launch
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch/gazebo.launch
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch/display.launch.py
+[0.775s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch/controller.yaml
+[0.776s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/launch/urdf.rviz
+[0.776s] -- Installing: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/package_run_dependencies/braco_description
+[0.776s] -- Installing: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/parent_prefix_path/braco_description
+[0.776s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.sh
+[0.776s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.dsv
+[0.776s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.sh
+[0.776s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.dsv
+[0.777s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.bash
+[0.777s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.sh
+[0.777s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.zsh
+[0.777s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.dsv
+[0.777s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/package.dsv
+[0.777s] -- Installing: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/packages/braco_description
+[0.777s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig.cmake
+[0.778s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig-version.cmake
+[0.778s] -- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/package.xml
+[0.780s] Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/host/ros_ws/build/braco_description

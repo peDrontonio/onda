@@ -1,0 +1,6 @@
+Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/manipulator_msgs -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_msgs
+Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/host/ros_ws/manipulator_msgs -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_msgs
+Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_msgs -- -j8 -l8
+Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_msgs -- -j8 -l8
+Invoking command in '/home/host/ros_ws/build/manipulator_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_msgs
+Invoked command in '/home/host/ros_ws/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_msgs

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- Arguments -->
+  <arg name="trajectory" default="square" doc="Trajectory type: square, circle, zigzag, wave"/>
+  <arg name="loops" default="1" doc="Number of loops to execute"/>
+  <arg name="continuous" default="false" doc="Run continuously"/>
+  <arg name="rate" default="50" doc="Control rate in Hz"/>
+
+  <!-- Trajectory controller node -->
+  <node name="trajectory_controller" 
+        pkg="manipulator_disturbance_control" 
+        type="trajectory_controller.py"
+        output="screen">
+    <param name="trajectory" value="$(arg trajectory)"/>
+    <param name="loops" value="$(arg loops)"/>
+    <param name="continuous" value="$(arg continuous)"/>
+    <param name="rate" value="$(arg rate)"/>
+  </node>
+
+</launch>

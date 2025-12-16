@@ -1,0 +1,39 @@
+[0.010s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/test_disturbance_client.dir/src/test_disturbance_client.cpp.o[0m
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/disturbance_applier_node.dir/src/disturbance_applier_node.cpp.o[0m
+[4.028s] [ 75%] [32m[1mLinking CXX executable test_disturbance_client[0m
+[4.252s] [ 75%] Built target test_disturbance_client
+[7.011s] [100%] [32m[1mLinking CXX executable disturbance_applier_node[0m
+[7.310s] [100%] Built target disturbance_applier_node
+[7.319s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '0': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8
+[7.320s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_disturbance_control
+[7.328s] -- Install configuration: ""
+[7.328s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/disturbance_applier_node
+[7.330s] -- Set runtime path of "/home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/disturbance_applier_node" to ""
+[7.331s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client
+[7.331s] -- Set runtime path of "/home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client" to ""
+[7.332s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client.py
+[7.332s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch
+[7.332s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_disturbance_test.launch
+[7.332s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_demo.launch
+[7.332s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/disturbance_control.launch
+[7.332s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_control.launch
+[7.333s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/src
+[7.333s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/src/disturbance_applier_node.cpp
+[7.333s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/src/test_disturbance_client.cpp
+[7.333s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control
+[7.333s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control
+[7.334s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.sh
+[7.334s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.dsv
+[7.334s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.sh
+[7.334s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.dsv
+[7.334s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.bash
+[7.335s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.sh
+[7.335s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.zsh
+[7.335s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.dsv
+[7.335s] -- Up-to-date: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.dsv
+[7.335s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/packages/manipulator_disturbance_control
+[7.336s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig.cmake
+[7.336s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig-version.cmake
+[7.336s] -- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.xml
+[7.339s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '0': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/host/ros_ws/build/manipulator_disturbance_control

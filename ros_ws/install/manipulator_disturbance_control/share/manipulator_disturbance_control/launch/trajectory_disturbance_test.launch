@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- Arguments -->
+  <arg name="scenario" default="all" doc="Test scenario: 1, 2, 3, 4, or all"/>
+  <arg name="gui" default="true" doc="Start Gazebo GUI"/>
+  <arg name="paused" default="false" doc="Start Gazebo paused"/>
+
+  <!-- Launch Gazebo with manipulator -->
+  <include file="$(find manipulator_gazebo)/launch/spawn_manipulator.launch">
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="$(arg paused)"/>
+  </include>
+
+  <!-- Launch disturbance control -->
+  <include file="$(find manipulator_disturbance_control)/launch/disturbance_control.launch"/>
+
+  <!-- Wait for Gazebo to stabilize -->
+  <arg name="wait_time" default="5.0"/>
+  <param name="/wait_for_gazebo" value="$(arg wait_time)" type="double"/>
+
+  <!-- Launch trajectory with disturbance test -->
+  <node name="trajectory_with_disturbance" 
+        pkg="manipulator_disturbance_control" 
+        type="trajectory_with_disturbance.py"
+        output="screen"
+        launch-prefix="bash -c 'sleep $(arg wait_time); $0 $@'">
+    <param name="scenario" value="$(arg scenario)"/>
+  </node>
+
+  <!-- Info message -->
+  <node name="startup_info" pkg="rostopic" type="rostopic" 
+        args="pub -1 /test_status std_msgs/String 'Trajectory disturbance test running...'"
+        output="screen"/>
+
+</launch>

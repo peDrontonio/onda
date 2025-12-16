@@ -1,0 +1,33 @@
+[0.007s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/ros_ws/manipulator_disturbance_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control
+[0.064s] -- The C compiler identification is GNU 11.4.0
+[0.115s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.180s] -- Detecting C compiler ABI info - done
+[0.188s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.189s] -- Detecting C compile features
+[0.189s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.263s] -- Detecting CXX compiler ABI info - done
+[0.272s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.272s] -- Detecting CXX compile features
+[0.273s] -- Detecting CXX compile features - done
+[0.287s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.287s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.287s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.287s]   CMake did not find one.
+[0.287s] 
+[0.287s]   Could not find a package configuration file provided by "catkin" with any
+[0.287s]   of the following names:
+[0.287s] 
+[0.287s]     catkinConfig.cmake
+[0.287s]     catkin-config.cmake
+[0.287s] 
+[0.288s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.288s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.288s]   provides a separate development package or SDK, be sure it has been
+[0.288s]   installed.
+[0.288s] 
+[0.288s] [0m
+[0.288s] -- Configuring incomplete, errors occurred!
+[0.288s] See also "/home/host/ros_ws/build/manipulator_disturbance_control/CMakeFiles/CMakeOutput.log".
+[0.290s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '1': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/ros_ws/manipulator_disturbance_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control

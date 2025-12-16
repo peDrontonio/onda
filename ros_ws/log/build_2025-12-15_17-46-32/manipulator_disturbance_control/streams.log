@@ -1,0 +1,51 @@
+[0.010s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/ros_ws/manipulator_disturbance_control -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control
+[0.025s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.173s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.280s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.337s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.345s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.355s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.370s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.389s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.448s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.452s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.541s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.571s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.620s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.633s] -- Looking for pthread.h
+[0.690s] -- Looking for pthread.h - found
+[0.690s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.759s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.760s] -- Found Threads: TRUE  
+[0.822s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.830s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.852s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.899s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.945s] -- Found manipulator_msgs: 1.0.0 (/home/host/ros_ws/install/manipulator_msgs/share/manipulator_msgs/cmake)
+[0.967s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.094s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.116s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.117s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.117s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.186s] -- Configuring done
+[1.204s] -- Generating done
+[1.214s] -- Build files have been written to: /home/host/ros_ws/build/manipulator_disturbance_control
+[1.222s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '0': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/host/ros_ws/manipulator_disturbance_control -DCMAKE_INSTALL_PREFIX=/home/host/ros_ws/install/manipulator_disturbance_control
+[1.223s] Invoking command in '/home/host/ros_ws/build/manipulator_disturbance_control': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8
+[1.268s] [ 50%] [32mBuilding CXX object CMakeFiles/disturbance_applier_node.dir/src/disturbance_applier_node.cpp.o[0m
+[1.268s] [ 50%] [32mBuilding CXX object CMakeFiles/test_disturbance_client.dir/src/test_disturbance_client.cpp.o[0m
+[1.276s] [01m[K/home/host/ros_ws/manipulator_disturbance_control/src/test_disturbance_client.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[1.276s]    10 | #include [01;31m[K<ros/ros.h>[m[K
+[1.276s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[1.276s] [01m[K/home/host/ros_ws/manipulator_disturbance_control/src/disturbance_applier_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[1.276s]    11 | #include [01;31m[K<ros/ros.h>[m[K
+[1.277s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[1.277s] compilation terminated.
+[1.277s] compilation terminated.
+[1.277s] gmake[2]: *** [CMakeFiles/test_disturbance_client.dir/build.make:76: CMakeFiles/test_disturbance_client.dir/src/test_disturbance_client.cpp.o] Error 1
+[1.277s] gmake[2]: *** [CMakeFiles/disturbance_applier_node.dir/build.make:76: CMakeFiles/disturbance_applier_node.dir/src/disturbance_applier_node.cpp.o] Error 1
+[1.277s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/disturbance_applier_node.dir/all] Error 2
+[1.277s] gmake[1]: *** Waiting for unfinished jobs....
+[1.277s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/test_disturbance_client.dir/all] Error 2
+[1.277s] gmake: *** [Makefile:146: all] Error 2
+[1.279s] Invoked command in '/home/host/ros_ws/build/manipulator_disturbance_control' returned '2': AMENT_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/host/ros_ws/install/manipulator_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/host/ros_ws/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/host/ros_ws/install/manipulator_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/host/ros_ws/build/manipulator_disturbance_control -- -j8 -l8

@@ -1,0 +1,14 @@
+[01m[K/home/host/ros_ws/manipulator_disturbance_control/src/test_disturbance_client.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+   10 | #include [01;31m[K<ros/ros.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/host/ros_ws/manipulator_disturbance_control/src/disturbance_applier_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+   11 | #include [01;31m[K<ros/ros.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_disturbance_client.dir/build.make:76: CMakeFiles/test_disturbance_client.dir/src/test_disturbance_client.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/disturbance_applier_node.dir/build.make:76: CMakeFiles/disturbance_applier_node.dir/src/disturbance_applier_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/disturbance_applier_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/test_disturbance_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

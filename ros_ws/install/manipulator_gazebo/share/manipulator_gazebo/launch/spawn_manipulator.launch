@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <!-- Arguments -->
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  <arg name="world_name" default="$(find manipulator_gazebo)/worlds/simple_world.world"/>
+
+  <!-- Launch Gazebo with empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+    <arg name="debug" value="$(arg debug)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+  <!-- Convert xacro to URDF and load to parameter server -->
+  <param name="robot_description" 
+         command="$(find xacro)/xacro '$(find manipulator_gazebo)/urdf/simple_manipulator.urdf.xacro'"/>
+
+  <!-- Spawn the robot in Gazebo -->
+  <node name="spawn_urdf" 
+        pkg="gazebo_ros" 
+        type="spawn_model" 
+        args="-param robot_description -urdf -model manipulator -z 0.01"
+        output="screen"/>
+
+  <!-- Load joint controller configurations -->
+  <rosparam file="$(find manipulator_gazebo)/config/joint_controllers.yaml" 
+            command="load" 
+            ns="/manipulator"/>
+
+  <!-- Load PID gains for gazebo_ros_control -->
+  <rosparam file="$(find manipulator_gazebo)/config/pid_gains.yaml" 
+            command="load" 
+            ns="/manipulator"/>
+
+  <!-- Load controllers -->
+  <node name="controller_spawner" 
+        pkg="controller_manager" 
+        type="spawner" 
+        respawn="false"
+        output="screen" 
+        ns="/manipulator"
+        args="joint_state_controller
+              joint_1_position_controller
+              joint_2_position_controller
+              joint_3_position_controller
+              joint_4_position_controller
+              joint_5_position_controller
+              joint_6_position_controller"/>
+
+  <!-- Robot state publisher -->
+  <node name="robot_state_publisher" 
+        pkg="robot_state_publisher" 
+        type="robot_state_publisher"
+        respawn="false" 
+        output="screen">
+    <remap from="/joint_states" to="/manipulator/joint_states"/>
+  </node>
+
+  <!-- Initialize manipulator to safe home position -->
+  <node name="position_initializer"
+        pkg="manipulator_gazebo"
+        type="initialize_position.py"
+        output="screen"
+        launch-prefix="bash -c 'sleep 5; $0 $@' "/>
+
+</launch>

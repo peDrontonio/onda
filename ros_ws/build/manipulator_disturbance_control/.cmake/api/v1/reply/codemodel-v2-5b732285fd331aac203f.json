@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ee060c95db973d311fbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "manipulator_disturbance_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "disturbance_applier_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-disturbance_applier_node-3962a4fe45732843eb21.json",
+					"name" : "disturbance_applier_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manipulator_disturbance_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manipulator_disturbance_control_uninstall-6ff567a03e6116d95d56.json",
+					"name" : "manipulator_disturbance_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_disturbance_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_disturbance_client-cc1cb2e109203d35511a.json",
+					"name" : "test_disturbance_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-45e7b77a050d035ae16a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/host/ros_ws/build/manipulator_disturbance_control",
+		"source" : "/home/host/ros_ws/manipulator_disturbance_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

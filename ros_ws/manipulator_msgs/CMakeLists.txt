@@ -1,32 +1,20 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(manipulator_msgs)
 
-## Find catkin and required packages
-find_package(catkin REQUIRED COMPONENTS
-  message_generation
-  message_runtime
-  std_msgs
-  geometry_msgs
-)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+## Find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 ## Declare service files
-add_service_files(
-  DIRECTORY srv
-  FILES
-  ApplyDisturbance.srv
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/ApplyDisturbance.srv"
+  DEPENDENCIES std_msgs geometry_msgs
 )
 
-## Generate messages
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-  geometry_msgs
-)
-
-## Catkin package macro
-catkin_package(
-  CATKIN_DEPENDS
-    message_runtime
-    std_msgs
-    geometry_msgs
-)
+ament_package()

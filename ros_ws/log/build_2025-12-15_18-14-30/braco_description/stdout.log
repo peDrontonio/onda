@@ -1,0 +1,50 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+-- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/host/ros_ws/build/braco_description
+-- Install configuration: ""
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.xacro
+-- Installing: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.gazebo
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.trans
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/materials.xacro
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot3_1.stl
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/base_link.stl
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot2_1.stl
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/prism1_1.stl
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot4_1.stl
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot1_1.stl
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch.py
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/urdf.rviz
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.launch
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.yaml
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch.py
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/launch/controller.yaml
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/launch/urdf.rviz
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/package_run_dependencies/braco_description
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/parent_prefix_path/braco_description
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.sh
+-- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.sh
+-- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.dsv
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.bash
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.sh
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.zsh
+-- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.dsv
+-- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/package.dsv
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/packages/braco_description
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig.cmake
+-- Up-to-date: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig-version.cmake
+-- Installing: /home/host/ros_ws/install/braco_description/share/braco_description/package.xml

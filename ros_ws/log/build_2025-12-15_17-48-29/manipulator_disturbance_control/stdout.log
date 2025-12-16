@@ -1,0 +1,35 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/test_disturbance_client.dir/src/test_disturbance_client.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/disturbance_applier_node.dir/src/disturbance_applier_node.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable test_disturbance_client[0m
+[ 75%] Built target test_disturbance_client
+[100%] [32m[1mLinking CXX executable disturbance_applier_node[0m
+[100%] Built target disturbance_applier_node
+-- Install configuration: ""
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/disturbance_applier_node
+-- Set runtime path of "/home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/disturbance_applier_node" to ""
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client
+-- Set runtime path of "/home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client" to ""
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/lib/manipulator_disturbance_control/test_disturbance_client.py
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_disturbance_test.launch
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_demo.launch
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/disturbance_control.launch
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/launch/trajectory_control.launch
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/src
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/src/disturbance_applier_node.cpp
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/src/test_disturbance_client.cpp
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/package_run_dependencies/manipulator_disturbance_control
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/parent_prefix_path/manipulator_disturbance_control
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.sh
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/ament_prefix_path.dsv
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.sh
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/environment/path.dsv
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.bash
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.sh
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.zsh
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/local_setup.dsv
+-- Up-to-date: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.dsv
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/ament_index/resource_index/packages/manipulator_disturbance_control
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig.cmake
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/cmake/manipulator_disturbance_controlConfig-version.cmake
+-- Installing: /home/host/ros_ws/install/manipulator_disturbance_control/share/manipulator_disturbance_control/package.xml
