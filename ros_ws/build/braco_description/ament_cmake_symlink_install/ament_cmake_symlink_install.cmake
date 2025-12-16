@@ -310,8 +310,23 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "urdf" "meshes" "launch" "DESTINATION" "share/braco_description/")
-ament_cmake_symlink_install_directory("/home/host/ros_ws/src/braco_description" DIRECTORY "urdf" "meshes" "launch" "DESTINATION" "share/braco_description/")
+# install(FILES "/home/host/ros_ws/build/braco_description/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/braco_description/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/braco_description" FILES "/home/host/ros_ws/build/braco_description/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/braco_description/environment")
+
+# install(FILES "/home/host/ros_ws/build/braco_description/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/braco_description/environment")
+ament_cmake_symlink_install_files("/home/host/ros_ws/src/braco_description" FILES "/home/host/ros_ws/build/braco_description/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/braco_description/environment")
+
+# install(DIRECTORY "/home/host/ros_ws/build/braco_description/ament_cmake_python/braco_description/braco_description.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/braco_description" DIRECTORY "/home/host/ros_ws/build/braco_description/ament_cmake_python/braco_description/braco_description.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info")
+
+# install(DIRECTORY "/home/host/ros_ws/src/braco_description/braco_description/" "DESTINATION" "local/lib/python3.10/dist-packages/braco_description" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/braco_description" DIRECTORY "/home/host/ros_ws/src/braco_description/braco_description/" "DESTINATION" "local/lib/python3.10/dist-packages/braco_description" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install(PROGRAMS "scripts/trajectory_publisher.py" "scripts/send_trajectory.py" "scripts/send_cartesian.py" "scripts/trajectory_planner.py" "DESTINATION" "lib/braco_description")
+ament_cmake_symlink_install_programs("/home/host/ros_ws/src/braco_description" PROGRAMS "scripts/trajectory_publisher.py" "scripts/send_trajectory.py" "scripts/send_cartesian.py" "scripts/trajectory_planner.py" "DESTINATION" "lib/braco_description")
+
+# install(DIRECTORY "urdf" "meshes" "launch" "config" "DESTINATION" "share/braco_description/")
+ament_cmake_symlink_install_directory("/home/host/ros_ws/src/braco_description" DIRECTORY "urdf" "meshes" "launch" "config" "DESTINATION" "share/braco_description/")
 
 # install(FILES "launch/controller.yaml" "launch/urdf.rviz" "DESTINATION" "share/braco_description/launch/")
 ament_cmake_symlink_install_files("/home/host/ros_ws/src/braco_description" FILES "launch/controller.yaml" "launch/urdf.rviz" "DESTINATION" "share/braco_description/launch/")

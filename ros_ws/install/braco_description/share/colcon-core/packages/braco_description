@@ -1,1 +1,1 @@
-controller_manager:gazebo_ros:joint_state_publisher:joint_state_publisher_gui:robot_state_publisher:ros2_control:ros2_controllers:rviz2:urdf:xacro
+control_msgs:controller_manager:gazebo_ros:joint_state_publisher:joint_state_publisher_gui:rclpy:robot_state_publisher:ros2_control:ros2_controllers:rviz2:sensor_msgs:trajectory_msgs:urdf:xacro

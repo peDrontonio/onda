@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.000249] (-) JobUnselected: {'identifier': 'manipulator_disturbance_control'}
+[0.000390] (-) JobUnselected: {'identifier': 'manipulator_gazebo'}
+[0.000461] (-) JobUnselected: {'identifier': 'manipulator_msgs'}
+[0.000532] (braco_description) JobQueued: {'identifier': 'braco_description', 'dependencies': OrderedDict()}
+[0.000596] (braco_description) JobStarted: {'identifier': 'braco_description'}
+[0.005555] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'cmake'}
+[0.005857] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'build'}
+[0.006232] (braco_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/host/ros_ws/build/braco_description', '--', '-j20', '-l20'], 'cwd': '/home/host/ros_ws/build/braco_description', 'env': OrderedDict([('HOSTNAME', 'pedrinho'), ('GIT_ASKPASS', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh'), ('BROWSER', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('OLDPWD', '/home/host'), ('TERM_PROGRAM_VERSION', '1.106.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ad37f53b-e04f-44d4-8f0a-e97c5debf553.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f8a720ec-4450-43dc-a3c3-f8242953e9e1.sock'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/host/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/host/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/home/host/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f8a720ec-4450-43dc-a3c3-f8242953e9e1.sock","/home/host/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-85a988062e.sock'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f8a720ec-4450-43dc-a3c3-f8242953e9e1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/sh'), ('GIT_PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', '97601802-d925-4fc8-a329-5c2df60cbf7a'), ('LC_ALL', 'C.UTF-8'), ('PWD', '/home/host/ros_ws/build/braco_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.023034] (braco_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099929] (-) TimerEvent: {}
+[0.126881] (braco_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.131021] (braco_description) StdoutLine: {'line': b'-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)\n'}
+[0.152047] (braco_description) StdoutLine: {'line': b'-- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)\n'}
+[0.152267] (braco_description) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.194005] (braco_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.200066] (-) TimerEvent: {}
+[0.237715] (braco_description) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.239931] (braco_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.240235] (braco_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.240549] (braco_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.241693] (braco_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.242218] (braco_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.244194] (braco_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.245466] (braco_description) StdoutLine: {'line': b'-- Build files have been written to: /home/host/ros_ws/build/braco_description\n'}
+[0.280597] (braco_description) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_braco_description\n'}
+[0.300218] (-) TimerEvent: {}
+[0.400653] (-) TimerEvent: {}
+[0.436467] (braco_description) StdoutLine: {'line': b'running egg_info\n'}
+[0.436712] (braco_description) StdoutLine: {'line': b'writing braco_description.egg-info/PKG-INFO\n'}
+[0.436841] (braco_description) StdoutLine: {'line': b'writing dependency_links to braco_description.egg-info/dependency_links.txt\n'}
+[0.436950] (braco_description) StdoutLine: {'line': b'writing top-level names to braco_description.egg-info/top_level.txt\n'}
+[0.438109] (braco_description) StdoutLine: {'line': b"reading manifest file 'braco_description.egg-info/SOURCES.txt'\n"}
+[0.438357] (braco_description) StdoutLine: {'line': b"writing manifest file 'braco_description.egg-info/SOURCES.txt'\n"}
+[0.454988] (braco_description) StdoutLine: {'line': b'Built target ament_cmake_python_build_braco_description_egg\n'}
+[0.462056] (braco_description) CommandEnded: {'returncode': 0}
+[0.462510] (braco_description) JobProgress: {'identifier': 'braco_description', 'progress': 'install'}
+[0.467380] (braco_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/host/ros_ws/build/braco_description'], 'cwd': '/home/host/ros_ws/build/braco_description', 'env': OrderedDict([('HOSTNAME', 'pedrinho'), ('GIT_ASKPASS', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass.sh'), ('BROWSER', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/helpers/browser.sh'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/host'), ('OLDPWD', '/home/host'), ('TERM_PROGRAM_VERSION', '1.106.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ad37f53b-e04f-44d4-8f0a-e97c5debf553.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_NODE', '/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f8a720ec-4450-43dc-a3c3-f8242953e9e1.sock'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/host/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/host/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/host/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli:/home/host/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f8a720ec-4450-43dc-a3c3-f8242953e9e1.sock","/home/host/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-85a988062e.sock'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f8a720ec-4450-43dc-a3c3-f8242953e9e1.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/sh'), ('GIT_PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('VSCODE_NONCE', '97601802-d925-4fc8-a329-5c2df60cbf7a'), ('LC_ALL', 'C.UTF-8'), ('PWD', '/home/host/ros_ws/build/braco_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.471800] (braco_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.472140] (braco_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.472306] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/pythonpath.sh\n'}
+[0.472411] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/pythonpath.dsv\n'}
+[0.472539] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.472637] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.472750] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.472831] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.472951] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description/__init__.py\n'}
+[0.473072] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/lib/braco_description/trajectory_publisher.py\n'}
+[0.473169] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/lib/braco_description/send_trajectory.py\n'}
+[0.473264] (braco_description) StdoutLine: {'line': b'-- Symlinking: /home/host/ros_ws/install/braco_description/lib/braco_description/send_cartesian.py\n'}
+[0.478879] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Bra\xc3\xa7o.gazebo\n'}
+[0.479057] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Bra\xc3\xa7o.trans\n'}
+[0.479166] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Bra\xc3\xa7o.xacro\n'}
+[0.479241] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.urdf\n'}
+[0.479305] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco_fixed.urdf\n'}
+[0.479380] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/materials.xacro\n'}
+[0.479458] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/base_link.stl\n'}
+[0.479643] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/prism1_1.stl\n'}
+[0.479736] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot1_1.stl\n'}
+[0.479817] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot2_1.stl\n'}
+[0.479911] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot3_1.stl\n'}
+[0.479984] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot4_1.stl\n'}
+[0.480058] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.launch\n'}
+[0.480140] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.yaml\n'}
+[0.480214] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch\n'}
+[0.480288] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch.py\n'}
+[0.480354] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch\n'}
+[0.480422] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch.py\n'}
+[0.480490] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/trajectory.launch.py\n'}
+[0.480558] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/urdf.rviz\n'}
+[0.480631] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//config/controllers.yaml\n'}
+[0.480700] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/launch//controller.yaml\n'}
+[0.480769] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/launch//urdf.rviz\n'}
+[0.480836] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/package_run_dependencies/braco_description\n'}
+[0.480938] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/parent_prefix_path/braco_description\n'}
+[0.481050] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.sh\n'}
+[0.481096] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.dsv\n'}
+[0.481132] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.sh\n'}
+[0.481165] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.dsv\n'}
+[0.481198] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.bash\n'}
+[0.481231] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.sh\n'}
+[0.481265] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.zsh\n'}
+[0.481298] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.dsv\n'}
+[0.481334] (braco_description) StdoutLine: {'line': b'-- Symlinking: /home/host/ros_ws/install/braco_description/share/braco_description/package.dsv\n'}
+[0.485706] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/packages/braco_description\n'}
+[0.485807] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig.cmake\n'}
+[0.485853] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig-version.cmake\n'}
+[0.485905] (braco_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/package.xml\n'}
+[0.500745] (-) TimerEvent: {}
+[0.502304] (braco_description) StdoutLine: {'line': b"Listing '/home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description'...\n"}
+[0.506103] (braco_description) CommandEnded: {'returncode': 0}
+[0.516921] (braco_description) JobEnded: {'identifier': 'braco_description', 'rc': 0}
+[0.517287] (-) EventReactorShutdown: {}

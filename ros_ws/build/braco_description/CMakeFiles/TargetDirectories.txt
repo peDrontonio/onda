@@ -1,5 +1,7 @@
 /home/host/ros_ws/build/braco_description/CMakeFiles/uninstall.dir
 /home/host/ros_ws/build/braco_description/CMakeFiles/braco_description_uninstall.dir
+/home/host/ros_ws/build/braco_description/CMakeFiles/ament_cmake_python_symlink_braco_description.dir
+/home/host/ros_ws/build/braco_description/CMakeFiles/ament_cmake_python_build_braco_description_egg.dir
 /home/host/ros_ws/build/braco_description/CMakeFiles/test.dir
 /home/host/ros_ws/build/braco_description/CMakeFiles/edit_cache.dir
 /home/host/ros_ws/build/braco_description/CMakeFiles/rebuild_cache.dir

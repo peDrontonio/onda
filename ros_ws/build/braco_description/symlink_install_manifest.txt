@@ -1,3 +1,14 @@
+/home/host/ros_ws/install/braco_description/share/braco_description/environment/pythonpath.sh
+/home/host/ros_ws/install/braco_description/share/braco_description/environment/pythonpath.dsv
+/home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/PKG-INFO
+/home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/SOURCES.txt
+/home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/dependency_links.txt
+/home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/top_level.txt
+/home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description/__init__.py
+/home/host/ros_ws/install/braco_description/lib/braco_description/trajectory_publisher.py
+/home/host/ros_ws/install/braco_description/lib/braco_description/send_trajectory.py
+/home/host/ros_ws/install/braco_description/lib/braco_description/send_cartesian.py
+/home/host/ros_ws/install/braco_description/lib/braco_description/trajectory_planner.py
 /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Braço.gazebo
 /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Braço.trans
 /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Braço.xacro
@@ -16,7 +27,9 @@
 /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch.py
 /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch
 /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch.py
+/home/host/ros_ws/install/braco_description/share/braco_description//launch/trajectory.launch.py
 /home/host/ros_ws/install/braco_description/share/braco_description//launch/urdf.rviz
+/home/host/ros_ws/install/braco_description/share/braco_description//config/controllers.yaml
 /home/host/ros_ws/install/braco_description/share/braco_description/launch//controller.yaml
 /home/host/ros_ws/install/braco_description/share/braco_description/launch//urdf.rviz
 /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/package_run_dependencies/braco_description

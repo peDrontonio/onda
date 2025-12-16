@@ -197,6 +197,32 @@ braco_description_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/braco_description_uninstall.dir/build.make CMakeFiles/braco_description_uninstall.dir/build
 .PHONY : braco_description_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named ament_cmake_python_symlink_braco_description
+
+# Build rule for target.
+ament_cmake_python_symlink_braco_description: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_braco_description
+.PHONY : ament_cmake_python_symlink_braco_description
+
+# fast build rule for target.
+ament_cmake_python_symlink_braco_description/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_braco_description.dir/build.make CMakeFiles/ament_cmake_python_symlink_braco_description.dir/build
+.PHONY : ament_cmake_python_symlink_braco_description/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_braco_description_egg
+
+# Build rule for target.
+ament_cmake_python_build_braco_description_egg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_braco_description_egg
+.PHONY : ament_cmake_python_build_braco_description_egg
+
+# fast build rule for target.
+ament_cmake_python_build_braco_description_egg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_braco_description_egg.dir/build.make CMakeFiles/ament_cmake_python_build_braco_description_egg.dir/build
+.PHONY : ament_cmake_python_build_braco_description_egg/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,6 +236,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... ament_cmake_python_build_braco_description_egg"
+	@echo "... ament_cmake_python_symlink_braco_description"
 	@echo "... braco_description_uninstall"
 	@echo "... uninstall"
 .PHONY : help

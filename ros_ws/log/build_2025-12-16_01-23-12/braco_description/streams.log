@@ -1,0 +1,62 @@
+[0.007s] Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j20 -l20
+[0.062s] Built target ament_cmake_python_symlink_braco_description
+[0.226s] running egg_info
+[0.226s] writing braco_description.egg-info/PKG-INFO
+[0.226s] writing dependency_links to braco_description.egg-info/dependency_links.txt
+[0.226s] writing top-level names to braco_description.egg-info/top_level.txt
+[0.228s] reading manifest file 'braco_description.egg-info/SOURCES.txt'
+[0.228s] writing manifest file 'braco_description.egg-info/SOURCES.txt'
+[0.243s] Built target ament_cmake_python_build_braco_description_egg
+[0.253s] Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/host/ros_ws/build/braco_description -- -j20 -l20
+[0.260s] Invoking command in '/home/host/ros_ws/build/braco_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/braco_description
+[0.265s] -- Install configuration: ""
+[0.265s] -- Execute custom install script
+[0.266s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/pythonpath.sh
+[0.266s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/pythonpath.dsv
+[0.266s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/PKG-INFO
+[0.266s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/SOURCES.txt
+[0.266s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/dependency_links.txt
+[0.266s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description-1.0.0-py3.10.egg-info/top_level.txt
+[0.266s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description/__init__.py
+[0.267s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/lib/braco_description/trajectory_publisher.py
+[0.267s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/lib/braco_description/send_trajectory.py
+[0.267s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Braço.gazebo
+[0.267s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Braço.trans
+[0.267s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/Braço.xacro
+[0.267s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco.urdf
+[0.267s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/braco_fixed.urdf
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//urdf/materials.xacro
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/base_link.stl
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/prism1_1.stl
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot1_1.stl
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot2_1.stl
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot3_1.stl
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//meshes/rot4_1.stl
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.launch
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/controller.yaml
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/display.launch.py
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/gazebo.launch.py
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/trajectory.launch.py
+[0.268s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//launch/urdf.rviz
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description//config/controllers.yaml
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/launch//controller.yaml
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/launch//urdf.rviz
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/package_run_dependencies/braco_description
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/parent_prefix_path/braco_description
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.sh
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/ament_prefix_path.dsv
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.sh
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/environment/path.dsv
+[0.269s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.bash
+[0.270s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.sh
+[0.270s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.zsh
+[0.270s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/local_setup.dsv
+[0.270s] -- Symlinking: /home/host/ros_ws/install/braco_description/share/braco_description/package.dsv
+[0.277s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/ament_index/resource_index/packages/braco_description
+[0.277s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig.cmake
+[0.277s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/cmake/braco_descriptionConfig-version.cmake
+[0.277s] -- Up-to-date symlink: /home/host/ros_ws/install/braco_description/share/braco_description/package.xml
+[0.298s] Listing '/home/host/ros_ws/install/braco_description/local/lib/python3.10/dist-packages/braco_description'...
+[0.302s] Invoked command in '/home/host/ros_ws/build/braco_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/host/ros_ws/build/braco_description

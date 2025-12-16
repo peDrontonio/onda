@@ -12,14 +12,29 @@ endif()
 
 # Find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
+find_package(rclpy REQUIRED)
+
+# Install Python modules
+ament_python_install_package(${PROJECT_NAME})
+
+# Install Python executables
+install(PROGRAMS
+  scripts/trajectory_publisher.py
+  scripts/send_trajectory.py
+  scripts/send_cartesian.py
+  scripts/trajectory_planner.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 # Install directories
 install(DIRECTORY
   urdf
   meshes
   launch
+  config
   DESTINATION share/${PROJECT_NAME}/
 )
 
