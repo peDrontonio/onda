@@ -182,21 +182,6 @@ O `trajectory_planner.py` também gera gráficos de posição, velocidade, acele
 
 ---
 
-## Checklist do Projeto (SEM0590)
-
-| Critério | Implementação |
-|----------|---------------|
-| Modelo do manipulador | URDF + xacro com geometria real, inércias do CAD |
-| Cinemática direta | `fk(q)` — transformadas homogêneas do URDF |
-| Cinemática inversa | SLSQP numérico, < 1 mm de precisão |
-| Planejamento de trajetória | Polinômio quíntico (C², velocidade e aceleração = 0 nas bordas) |
-| Controlador por torques | PD + compensação de gravidade: `τ = Kp·e + Kd·ė + G(q)` |
-| Simulação dinâmica | `closed_loop_sim.py` — integração de `M·q̈ = τ − C − G` |
-| Simulação em Gazebo | Gazebo Harmonic com interface de esforço e `gz_ros2_control` |
-| Gráficos | Posição × tempo, erro de rastreamento, torques (via `trajectory_planner.py` e `closed_loop_sim.py`) |
-
----
-
 ## Referências
 
 - Craig, J. J. — *Introduction to Robotics: Mechanics and Control*
