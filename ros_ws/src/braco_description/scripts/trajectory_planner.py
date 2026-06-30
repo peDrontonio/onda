@@ -28,6 +28,8 @@ from builtin_interfaces.msg import Duration
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+
+from braco_description.cinematica_inversa import ik as _ik_solve, JOINT_NAMES
 import sys
 import argparse
 from datetime import datetime
@@ -652,15 +654,14 @@ class TrajectoryPlannerNode(Node):
         ]
         
         # Initialize components
-        self.kinematics = BracoKinematics()
         self.planner = QuinticTrajectoryPlanner()
         self.dynamics = BracoDynamics()
         self.visualizer = TrajectoryVisualizer(output_dir)
-        
-        # Publisher
+
+        # Publisher — braco_controller picks this up and converts to effort commands
         self.publisher = self.create_publisher(
             JointTrajectory,
-            '/trajectory_command',
+            '/braco/trajectory_command',
             10
         )
         
@@ -683,9 +684,17 @@ class TrajectoryPlannerNode(Node):
         self.get_logger().info(f'Duração: {self.duration:.2f}s')
         
         # Calculate IK
-        q_end = self.kinematics.inverse_kinematics(x, y, z, self.q5)
+        q_end_arr, ok, err = _ik_solve((x, y, z), q5=self.q5)
+        if not ok:
+            self.get_logger().error(
+                f'IK did not converge (error={err*1000:.1f} mm). '
+                'Target may be outside workspace.'
+            )
+            self.executed = True
+            return
+        q_end = q_end_arr.tolist()
         q_start = [0.0, 0.0, 0.0, 0.0, 0.0]  # Home position
-        
+
         self.get_logger().info("\nPosições das juntas calculadas:")
         for name, pos in zip(self.joint_names, q_end):
             if name == 'rot3_prism1':

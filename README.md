@@ -1,170 +1,205 @@
-# Manipulador Robótico com Controle Cinemático e Grasping
+# Braço Robótico RRRPR — Controle por Torques
 
-Projeto Onda da disciplina de Dinâmica de Sistemas Robóticos (SEM0590)
+Projeto da disciplina **SEM0590 — Dinâmica de Sistemas Robóticos**  
+Universidade de São Paulo
 
-## Descrição
+---
 
-Este projeto implementa manipulador robótico focado em tarefas de solda. O objetivo é demonstrar conceitos avançados de cinemática direta e inversa, dinâmica de sistemas robóticos e controle de movimento em ambientes simulados e reais. O sistema resolve problemas de planejamento de trajetória e aplicações industriais e de pesquisa.
+## Visão Geral
 
-A cinemática é tratada utilizando a Robotics Toolbox de Peter Corke, implementada em Python, permitindo cálculos precisos de posições e orientações das juntas. A dinâmica é considerada para simulações realistas, incluindo efeitos de gravidade e inércia. O controle é baseado em algoritmos de controle direto, integrando feedback de sensores para ajustes em tempo real.
+Implementação completa de um manipulador robótico de 5 graus de liberdade (cadeia RRRPR) com:
 
-## Funcionalidades
+- Cinemática direta e inversa derivadas diretamente do URDF
+- Planejamento de trajetória por **polinômio quíntico** (C² contínuo)
+- **Controlador PD com compensação de gravidade** — o controlador recebe uma posição desejada e computa os torques necessários: `τ = Kp·e + Kd·ė + G(q)`
+- Simulação em malha fechada da dinâmica completa (`M·q̈ + C·q̇ + G = τ`)
+- Integração com **Gazebo Harmonic** via `gz_ros2_control` e interface de esforço
 
-- **Controle de Movimento**: Implementação de cinemática direta e inversa para posicionamento preciso das juntas do manipulador.
-- **Simulação e Visualização**: Integração com simuladores como Gazebo e RViz para testes virtuais e visualização 3D do movimento.
-- **Interface com Hardware**: Comunicação via ROS (Robot Operating System) e MoveIt para controle de robôs reais.
-- **Demonstrações Interativas**: Scripts Python para testes rápidos e validação de algoritmos.
+---
 
-## Tecnologias Usadas
+## Estrutura do Projeto
 
-- **ROS Humble**: Framework principal para robótica, utilizado para comunicação entre nós, controle de hardware e simulação.
-- **Python**: Linguagem principal para scripts de controle, simulação e análise.
-- **Robotics Toolbox (Peter Corke)**: Biblioteca para cálculos de cinemática, dinâmica e controle de robôs.
-- **Gazebo**: Simulador físico para testes de movimento e interação com o ambiente.
-- **RViz**: Ferramenta de visualização para monitoramento do estado do robô em tempo real.
-- **Docker**: Containerização para facilitar a instalação e execução em diferentes sistemas.
-- **MoveIt**: Framework para planejamento de movimento e manipulação em ROS.
-
-## Instalação
-
-### Requisitos de Sistema
-
-- Ubuntu 20.04 ou superior
-- ROS Humble instalado
-- Python 3.8+
-- Docker (opcional, mas recomendado para isolamento)
-
-### Dependências
-
-1. Para usar Docker (recomendado):
-   - Construa a imagem: `./scripts/build.sh`
-   - Execute o container: `./scripts/run.sh`
-
-### Configuração com Docker e Execução
-
-Para um ambiente isolado e fácil de configurar, use Docker:
-
-1. **Construir a Imagem Docker**:
-   ```bash
-   ./scripts/build.sh
-   ```
-   Este comando constrói uma imagem baseada no ROS Humble com todas as dependências necessárias.
-
-2. **Executar o Container**:
-   ```bash
-   ./scripts/run.sh
-   ```
-   Isso inicia um container interativo onde você pode executar comandos ROS e scripts Python.
-
-3. **Executar Códigos de Exemplo**:
-   Dentro do container ou no ambiente local, execute demonstrações:
-   - Demo básica: `python peter_corke/scripts/demo.py`
-   - Cinemática direta: `python peter_corke/scripts/cinematica_direta.py`
-   - Cinemática inversa: `python peter_corke/scripts/cinematica_inversa.py`
-   - Visualização: `python peter_corke/scripts/braco_swift_visualization.py`
-
-### Compilação e Execução
-
-1. Clone o repositório e navegue para o diretório:
-   ```bash
-   git clone <url-do-repositorio>
-   cd onda
-   ```
-
-2. Configure o workspace ROS:
-   ```bash
-   cd ros_ws
-   colcon build
-   source install/setup.bash
-   ```
-
-3. Execute uma demonstração básica:
-   ```bash
-   python peter_corke/scripts/demo.py
-   ```
-
-## Como Usar
-
-### Iniciando a Simulação
-
-1. Lance o Gazebo com o modelo do robô:
-   ```bash
-   ros2 launch braco_description display.launch.py
-   ```
-2. Lance o planejador de trajetória.
-   ```bash
-   ros2 run braco_desciption trajectory.launch.py
-   ```
-
-### Cĺculo e implementação das cinemáticas
-
-- Use scripts Python para definir posições das juntas:
-  ```python
-  from roboticstoolbox import DHRobot, RevoluteDH
-  # Defina o robô e calcule cinemática
-  ```
-
-### Visualização
-
-No RViz, adicione displays para o modelo do robô, trajetórias e sensores. Use tópicos ROS para publicar comandos de movimento.
-
-## Exemplo de Simulação/Execução
-
-Aqui está um exemplo simples de execução de uma trajetória básica:
-
-```python
-import numpy as np
-from roboticstoolbox import DHRobot, RevoluteDH
-
-# Defina o robô (exemplo com 3 juntas)
-robot = DHRobot([
-    RevoluteDH(d=0.1, a=0.5),
-    RevoluteDH(alpha=np.pi/2, a=0.4),
-    RevoluteDH(d=0.2)
-], name="MyRobot")
-
-# Posição desejada
-T_desired = robot.fkine([0.5, 0.3, 0.1])  # Cinemática direta
-
-# Calcule juntas para alcançar a posição (cinemática inversa)
-q = robot.ikine_LM(T_desired)
-
-print("Juntas calculadas:", q.q)
+```
+onda/
+├── peter_corke/scripts/
+│   ├── cinematica_inversa.py   — FK/IK (modelo de referência)
+│   ├── closed_loop_sim.py      — simulação dinâmica em malha fechada (standalone)
+│   └── position_ui.py          — visualizador 3D interativo
+│
+└── ros_ws/src/
+    ├── braco_description/
+    │   ├── urdf/Braço.xacro           — modelo URDF com interface de esforço
+    │   ├── config/controllers.yaml    — effort_controller (JointGroupEffortController)
+    │   ├── launch/gazebo.launch.py    — Gazebo Harmonic com controlador PD+G
+    │   ├── scripts/
+    │   │   ├── braco_controller.py    — nó ROS2: PD + compensação de gravidade
+    │   │   ├── trajectory_planner.py  — IK + polinômio quíntico + gráficos
+    │   │   └── send_cartesian.py      — envia posição cartesiana via IK
+    │   └── braco_description/
+    │       └── cinematica_inversa.py  — módulo Python (importável pelos nós ROS)
+    └── manipulator_gazebo/
+        └── launch/spawn_braco.launch.py
 ```
 
-**Entrada Esperada**: Posição e orientação desejada do efetuador.
-**Saída**: Valores das juntas do robô para alcançar a pose.
+---
 
-Para executar: `python exemplo.py`
+## Cadeia Cinemática
 
-### Simulações
+O manipulador possui a cadeia **RRRPR** (base → efetuador):
 
-Para testar grasping: `python peter_corke/scripts/demo_first_try.py`
+| Junta | Tipo | Eixo | Origem (rel. pai) | Limites |
+|-------|------|------|-------------------|---------|
+| `base_rot1`   | Revoluta  | Z  | (0, 0, 0.035) m     | [0, 2π] |
+| `rot1_rot2`   | Revoluta  | X  | (0.1, 0, 0.065) m   | [0, 2π] |
+| `rot2_rot3`   | Revoluta  | Y  | (0.08, 0.1, 0) m    | [0, 2π] |
+| `rot3_prism1` | Prismática | Y  | (-0.18, 0.1, 0) m   | [0, 0.1 m] |
+| `prism1_rot4` | Revoluta  | -X | (0, 0.165, 0) m     | [±60°] |
 
-## Contribuição
+**Posição de repouso** (q = 0): efetuador em (0, 0.365, 0.1) m no frame mundo.
 
-Contribuições são bem-vindas! Para contribuir:
+### Cinemática Direta
 
-1. Fork o repositório.
-2. Crie uma branch para sua feature: `git checkout -b feature/nova-funcionalidade`
-3. Commit suas mudanças: `git commit -m 'Adiciona nova funcionalidade'`
-4. Push para a branch: `git push origin feature/nova-funcionalidade`
-5. Abra um Pull Request.
+FK implementada como produto de transformadas homogêneas derivadas diretamente do URDF
+(sem aproximação por parâmetros DH):
 
-Siga as convenções de código e adicione testes para novas funcionalidades.
+```
+T(q) = Tz(q1) · Tx_y(0.1,0,0.065) · Rx(q2) · ...
+```
 
+### Cinemática Inversa
 
-## Referências e Links Úteis
+IK numérica com otimizador SLSQP (scipy), múltiplos pontos de partida, tolerância < 1 mm.
 
-- [ROS Documentation](https://docs.ros.org/en/humble/)
-- [Robotics Toolbox for Python](https://github.com/petercorke/robotics-toolbox-python)
-- [MoveIt Tutorials](https://moveit.picknik.ai/humble/)
-- [Gazebo Simulation](https://gazebosim.org/)
-- [Peter Corke Robotics Book](https://petercorke.com/robotics/)
+---
 
-## Imagens e Vídeos
+## Lei de Controle
 
-![Simulação](https://drive.google.com/file/d/1Bioajuh18dL6YXh0Bl7cxDEz-S56hfDP/view?usp=sharing)
-*Simulação do manipulador executando uma trajetória*
+O controlador implementa **PD com compensação de gravidade**:
 
-[Vídeo Demonstrativo](https://drive.google.com/file/d/1YR7aKbvposASezvE1vFXXejYeSh8mhne/view?usp=sharing) 
+```
+τ = Kp·(q_des − q) + Kd·(q̇_des − q̇) + G(q)
+```
+
+| Ganho | Juntas [θ₁, θ₂, θ₃] | Prismatic d₄ | Junta θ₅ |
+|-------|---------------------|--------------|----------|
+| **Kp** | 120, 100, 80 N·m/rad | 500 N/m | 30 N·m/rad |
+| **Kd** | 10, 8, 6 N·m·s/rad  | 30 N·s/m | 2 N·m·s/rad |
+
+**G(q)** usa as massas reais do URDF:
+
+```
+G[1] = (m₂+m₃+m₄)·g·0.1·cos(q₂)
+G[2] = (m₃+m₄)·g·0.08·cos(q₂+q₃)
+G[3] = m₄·g·sin(q₂+q₃)
+G[4] = 0.01·g·cos(q₅)
+```
+
+massas [m₁…m₆] = [1.91, 6.85, 7.27, 14.51, 4.19, 0.65] kg (do URDF).
+
+---
+
+## Simulação em Malha Fechada (standalone)
+
+Integra a dinâmica completa sem Gazebo — roda em qualquer máquina com Python 3:
+
+```bash
+cd peter_corke/scripts
+python3 closed_loop_sim.py -0.155 0.290 0.361 --duration 4.0 --output output/
+```
+
+Saída: `output/tracking.png`, `output/tracking_error.png`, `output/torques.png`, `output/summary.png`
+
+A simulação integra `q̈ = M(q)⁻¹·[τ − C(q,q̇) − G(q)]` com o controlador PD+G acima.
+Convergência verificada: erro cartesiano final < 0.001 mm.
+
+---
+
+## Visualizador Interativo
+
+```bash
+cd peter_corke/scripts
+python3 position_ui.py
+```
+
+Interface matplotlib com caixa de texto para entrada de X, Y, Z e visualização 3D animada do braço.
+
+---
+
+## Simulação no Gazebo
+
+### Dependências (instalar uma vez)
+
+```bash
+sudo apt install \
+    ros-humble-gz-ros2-control \
+    ros-humble-effort-controllers \
+    ros-humble-joint-state-broadcaster \
+    ros-humble-robot-state-publisher \
+    ros-humble-xacro
+```
+
+### Build
+
+```bash
+cd ros_ws
+colcon build
+source install/setup.bash
+```
+
+### Executar
+
+```bash
+# Janela 1 — Gazebo + controlador PD+G
+ros2 launch braco_description gazebo.launch.py
+
+# Janela 2 — planejar e enviar trajetória
+ros2 run braco_description trajectory_planner.py -0.155 0.290 0.361 --duration 4.0
+
+# Alternativa: enviar posição cartesiana direta
+ros2 run braco_description send_cartesian.py -0.155 0.290 0.361
+```
+
+### Arquitetura dos nós
+
+```
+trajectory_planner.py ──┐
+                         ├─► /braco/trajectory_command (JointTrajectory)
+send_cartesian.py ───────┘
+                                    ▼
+                         braco_controller.py   ← /joint_states
+                                    │
+                                    ▼
+                         /effort_controller/commands (Float64MultiArray)
+                                    ▼
+                    effort_controllers/JointGroupEffortController
+                                    ▼
+                              gz_ros2_control
+                                    ▼
+                              Gazebo Harmonic
+```
+
+O `trajectory_planner.py` também gera gráficos de posição, velocidade, aceleração e torques de dinâmica inversa na pasta `output/`.
+
+---
+
+## Checklist do Projeto (SEM0590)
+
+| Critério | Implementação |
+|----------|---------------|
+| Modelo do manipulador | URDF + xacro com geometria real, inércias do CAD |
+| Cinemática direta | `fk(q)` — transformadas homogêneas do URDF |
+| Cinemática inversa | SLSQP numérico, < 1 mm de precisão |
+| Planejamento de trajetória | Polinômio quíntico (C², velocidade e aceleração = 0 nas bordas) |
+| Controlador por torques | PD + compensação de gravidade: `τ = Kp·e + Kd·ė + G(q)` |
+| Simulação dinâmica | `closed_loop_sim.py` — integração de `M·q̈ = τ − C − G` |
+| Simulação em Gazebo | Gazebo Harmonic com interface de esforço e `gz_ros2_control` |
+| Gráficos | Posição × tempo, erro de rastreamento, torques (via `trajectory_planner.py` e `closed_loop_sim.py`) |
+
+---
+
+## Referências
+
+- Craig, J. J. — *Introduction to Robotics: Mechanics and Control*
+- ROS 2 Humble Docs — https://docs.ros.org/en/humble/
+- Gazebo Harmonic — https://gazebosim.org/
+- gz_ros2_control — https://github.com/ros-controls/gz_ros2_control

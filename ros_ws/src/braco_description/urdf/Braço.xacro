@@ -4,6 +4,15 @@
 <xacro:include filename="$(find braco_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find braco_description)/urdf/Braço.trans" />
 <xacro:include filename="$(find braco_description)/urdf/Braço.gazebo" />
+
+<link name="world"/>
+
+<joint name="world_to_base" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="world"/>
+  <child link="base_link"/>
+</joint>
+
 <link name="base_link">
   <inertial>
     <origin xyz="0.0 9.341702626166154e-18 0.016604912357786914" rpy="0 0 0"/>
@@ -169,5 +178,36 @@
   <axis xyz="-1.0 0.0 0.0"/>
   <limit upper="1.047198" lower="-1.047198" effort="100" velocity="100"/>
 </joint>
+
+<ros2_control name="braco_system" type="system">
+  <hardware>
+    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+  </hardware>
+  <joint name="base_rot1">
+    <command_interface name="effort"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="rot1_rot2">
+    <command_interface name="effort"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="rot2_rot3">
+    <command_interface name="effort"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="rot3_prism1">
+    <command_interface name="effort"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="prism1_rot4">
+    <command_interface name="effort"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
 
 </robot>

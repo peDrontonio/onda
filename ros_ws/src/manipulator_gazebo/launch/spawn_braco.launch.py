@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Standalone Gazebo Harmonic launch for the Braco robot.
+Spawn the Braco robot in Gazebo Harmonic with effort-based control.
 
 Run:
-    ros2 launch braco_description gazebo.launch.py
+    ros2 launch manipulator_gazebo spawn_braco.launch.py
 
 Prerequisites (install once):
     sudo apt install \
@@ -27,10 +27,10 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    pkg_share = get_package_share_directory('braco_description')
+    pkg_braco = get_package_share_directory('braco_description')
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
-    urdf_xacro = os.path.join(pkg_share, 'urdf', 'Braço.xacro')
+    urdf_xacro = os.path.join(pkg_braco, 'urdf', 'Braço.xacro')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
 
@@ -40,7 +40,7 @@ def generate_launch_description():
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
         ),
         launch_arguments={
-            'gz_args': '-r empty.sdf',
+            'gz_args': ['-r empty.sdf'],
             'on_exit_shutdown': 'true',
         }.items(),
     )
@@ -57,7 +57,7 @@ def generate_launch_description():
         }],
     )
 
-    # ── Spawn robot ───────────────────────────────────────────────────────────
+    # ── Spawn robot into Gazebo ───────────────────────────────────────────────
     spawn_robot = Node(
         package='ros_gz_sim',
         executable='create',
@@ -122,6 +122,8 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument('use_sim_time', default_value='true',
                               description='Use Gazebo simulation clock'),
+        DeclareLaunchArgument('gui', default_value='true',
+                              description='Start Gazebo GUI'),
         gz_sim,
         robot_state_publisher,
         spawn_robot,

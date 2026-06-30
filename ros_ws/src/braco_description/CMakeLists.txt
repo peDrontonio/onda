@@ -26,6 +26,7 @@ install(PROGRAMS
   scripts/send_trajectory.py
   scripts/send_cartesian.py
   scripts/trajectory_planner.py
+  scripts/braco_controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
