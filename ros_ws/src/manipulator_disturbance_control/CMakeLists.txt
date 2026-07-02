@@ -17,11 +17,12 @@ find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(gazebo_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(manipulator_msgs REQUIRED)
-find_package(tf2_ros REQUIRED)
-find_package(tf2_geometry_msgs REQUIRED)
+
+# Modern Gazebo (Harmonic) transport + messages, replacing Gazebo Classic gazebo_msgs
+find_package(gz-transport13 REQUIRED)
+find_package(gz-msgs10 REQUIRED)
 
 # Include directories
 include_directories(
@@ -29,7 +30,7 @@ include_directories(
 )
 
 # Disturbance applier node executable
-add_executable(disturbance_applier_node 
+add_executable(disturbance_applier_node
   src/disturbance_applier_node.cpp
 )
 
@@ -37,11 +38,13 @@ ament_target_dependencies(disturbance_applier_node
   rclcpp
   std_msgs
   geometry_msgs
-  gazebo_msgs
   visualization_msgs
   manipulator_msgs
-  tf2_ros
-  tf2_geometry_msgs
+)
+
+target_link_libraries(disturbance_applier_node
+  gz-transport13::gz-transport13
+  gz-msgs10::gz-msgs10
 )
 
 # Test disturbance client executable
@@ -72,11 +75,6 @@ install(PROGRAMS
 # Install launch files
 install(DIRECTORY launch/
   DESTINATION share/${PROJECT_NAME}/launch
-)
-
-# Install config files
-install(DIRECTORY config/
-  DESTINATION share/${PROJECT_NAME}/config
 )
 
 if(BUILD_TESTING)

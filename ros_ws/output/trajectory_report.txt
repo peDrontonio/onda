@@ -3,12 +3,12 @@ RELATÓRIO DE PLANEJAMENTO DE TRAJETÓRIA
 Braco Manipulator - Polinômio Quíntico (Grau 5)
 ============================================================
 
-Data/Hora: 2025-12-16 02:14:35
+Data/Hora: 2026-06-30 18:17:09
 
 PARÂMETROS DA TRAJETÓRIA:
 ----------------------------------------
-Posição alvo (Cartesiano): x=0.200m, y=0.100m, z=0.150m
-Duração: 8.00 segundos
+Posição alvo (Cartesiano): x=-0.155m, y=0.290m, z=0.361m
+Duração: 4.00 segundos
 Pontos de amostragem: 100
 
 TIPO DE INTERPOLAÇÃO:
@@ -33,37 +33,37 @@ VANTAGENS DO POLINÔMIO QUÍNTICO:
 POSIÇÕES DAS JUNTAS:
 ----------------------------------------
 Junta                Inicial         Final           Unidade
-base_rot1 (θ₁)               0.00          26.57   graus
-rot1_rot2 (θ₂)               0.00         192.60   graus
-rot2_rot3 (θ₃)               0.00         180.00   graus
-rot3_prism1 (d₄)             0.00          50.00   mm
+base_rot1 (θ₁)               0.00          36.72   graus
+rot1_rot2 (θ₂)               0.00          21.51   graus
+rot2_rot3 (θ₃)               0.00          43.36   graus
+rot3_prism1 (d₄)             0.00          33.19   mm
 prism1_rot4 (θ₅)             0.00           0.00   graus
 
 ANÁLISE DE VELOCIDADE:
 ----------------------------------------
 Junta                Vel. Máx        Unidade
-base_rot1 (θ₁)             6.2249   °/s
-rot1_rot2 (θ₂)            45.1324   °/s
-rot2_rot3 (θ₃)            42.1789   °/s
-rot3_prism1 (d₄)          11.7164   mm/s
+base_rot1 (θ₁)            17.2081   °/s
+rot1_rot2 (θ₂)            10.0820   °/s
+rot2_rot3 (θ₃)            20.3225   °/s
+rot3_prism1 (d₄)          15.5565   mm/s
 prism1_rot4 (θ₅)           0.0000   °/s
 
 ANÁLISE DE ACELERAÇÃO:
 ----------------------------------------
 Junta                Acel. Máx       Unidade
-base_rot1 (θ₁)             2.3964   °/s²
-rot1_rot2 (θ₂)            17.3748   °/s²
-rot2_rot3 (θ₃)            16.2378   °/s²
-rot3_prism1 (d₄)           4.5105   mm/s²
+base_rot1 (θ₁)            13.2494   °/s²
+rot1_rot2 (θ₂)             7.7626   °/s²
+rot2_rot3 (θ₃)            15.6473   °/s²
+rot3_prism1 (d₄)          11.9777   mm/s²
 prism1_rot4 (θ₅)           0.0000   °/s²
 
 ANÁLISE DE TORQUE:
 ----------------------------------------
 Junta                Torque Máx      Unidade
-base_rot1 (θ₁)             0.0009   N·m
+base_rot1 (θ₁)             0.0005   N·m
 rot1_rot2 (θ₂)            25.4789   N·m
-rot2_rot3 (θ₃)            14.6782   N·m
-rot3_prism1 (d₄)          41.1033   N
+rot2_rot3 (θ₃)            14.6791   N·m
+rot3_prism1 (d₄)          37.2152   N
 prism1_rot4 (θ₅)           0.0981   N·m
 
 ============================================================

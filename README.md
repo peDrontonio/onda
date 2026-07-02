@@ -9,10 +9,11 @@ Universidade de São Paulo
 
 Implementação completa de um manipulador robótico de 5 graus de liberdade (cadeia RRRPR) com:
 
-- Cinemática direta e inversa derivadas diretamente do URDF
+- Modelo cinemático **e dinâmico** carregado no **Robotics Toolbox (Peter Corke)** diretamente do URDF do robô (massas, centros de massa e tensores de inércia reais — sem aproximação por parâmetros DH nem inércias ajustadas à mão)
+- Cinemática inversa por **Levenberg–Marquardt** (`ikine_LM`, posição) e direta por `fkine`
 - Planejamento de trajetória por **polinômio quíntico** (C² contínuo)
-- **Controlador PD com compensação de gravidade** — o controlador recebe uma posição desejada e computa os torques necessários: `τ = Kp·e + Kd·ė + G(q)`
-- Simulação em malha fechada da dinâmica completa (`M·q̈ + C·q̇ + G = τ`)
+- **Controlador PD com compensação de gravidade** — o controlador recebe uma posição desejada e computa os torques necessários: `τ = Kp·e + Kd·ė + G(q)`, com `G(q)` obtido do Robotics Toolbox
+- Simulação em malha fechada da dinâmica completa (`M·q̈ + C·q̇ + G = τ`) integrada com solver rígido (SciPy `LSODA`)
 - Integração com **Gazebo Harmonic** via `gz_ros2_control` e interface de esforço
 
 ---
@@ -21,10 +22,13 @@ Implementação completa de um manipulador robótico de 5 graus de liberdade (ca
 
 ```
 onda/
-├── peter_corke/scripts/
-│   ├── cinematica_inversa.py   — FK/IK (modelo de referência)
-│   ├── closed_loop_sim.py      — simulação dinâmica em malha fechada (standalone)
-│   └── position_ui.py          — visualizador 3D interativo
+├── peter_corke/
+│   ├── requirements.txt        — dependências Python (Robotics Toolbox etc.)
+│   └── scripts/
+│       ├── braco_rtb.py            — modelo Robotics Toolbox (carrega o URDF: cinemática + dinâmica)
+│       ├── cinematica_inversa.py   — FK/IK de referência (implementação própria, sem RTB)
+│       ├── closed_loop_sim.py      — simulação dinâmica em malha fechada (RTB, standalone)
+│       └── position_ui.py          — visualizador 3D interativo (RTB)
 │
 └── ros_ws/src/
     ├── braco_description/
@@ -59,16 +63,17 @@ O manipulador possui a cadeia **RRRPR** (base → efetuador):
 
 ### Cinemática Direta
 
-FK implementada como produto de transformadas homogêneas derivadas diretamente do URDF
-(sem aproximação por parâmetros DH):
-
-```
-T(q) = Tz(q1) · Tx_y(0.1,0,0.065) · Rx(q2) · ...
-```
+O modelo é carregado no **Robotics Toolbox** a partir do URDF (`braco_rtb.py`),
+e a FK usa `robot.fkine(q)`. Em `q = 0` o efetuador fica em `(0, 0.365, 0.1)`,
+conforme o URDF. Uma implementação própria equivalente (produto de transformadas
+homogêneas, sem DH) está em `cinematica_inversa.py` como referência.
 
 ### Cinemática Inversa
 
-IK numérica com otimizador SLSQP (scipy), múltiplos pontos de partida, tolerância < 1 mm.
+IK por Levenberg–Marquardt do Robotics Toolbox (`robot.ikine_LM`, apenas
+posição — máscara `[1,1,1,0,0,0]`, pois o braço tem 5 DOF para uma tarefa de
+posição 3D), tolerância < 1 mm. A referência `cinematica_inversa.py` usa SLSQP
+(scipy) com múltiplos pontos de partida.
 
 ---
 
@@ -98,19 +103,44 @@ massas [m₁…m₆] = [1.91, 6.85, 7.27, 14.51, 4.19, 0.65] kg (do URDF).
 
 ---
 
+## Ambiente Python (Robotics Toolbox)
+
+Os scripts em `peter_corke/scripts/` usam o **Robotics Toolbox**. Crie um
+ambiente virtual isolado (evita conflitos com pacotes do sistema/ROS) e instale
+as dependências:
+
+```bash
+cd peter_corke
+python3 -m venv .venv          # se faltar: sudo apt install python3.10-venv
+                               # alternativa sem apt: python3 -m virtualenv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+```
+
+O modelo é carregado do URDF (`ros_ws/src/braco_description/urdf/braco.urdf`) em
+`braco_rtb.py`. Verifique o modelo com:
+
+```bash
+python scripts/braco_rtb.py     # imprime a cadeia RRRPR, massas e um teste de IK
+```
+
 ## Simulação em Malha Fechada (standalone)
 
-Integra a dinâmica completa sem Gazebo — roda em qualquer máquina com Python 3:
+Integra a dinâmica completa (obtida do Robotics Toolbox) sem Gazebo:
 
 ```bash
 cd peter_corke/scripts
-python3 closed_loop_sim.py -0.155 0.290 0.361 --duration 4.0 --output output/
+python closed_loop_sim.py -0.155 0.290 0.361 --duration 4.0 --output output/
 ```
 
-Saída: `output/tracking.png`, `output/tracking_error.png`, `output/torques.png`, `output/summary.png`
+Saída (os quatro gráficos exigidos + resumo):
+`output/tracking.png`, `output/velocity.png`, `output/tracking_error.png`,
+`output/torques.png`, `output/summary.png`
 
-A simulação integra `q̈ = M(q)⁻¹·[τ − C(q,q̇) − G(q)]` com o controlador PD+G acima.
-Convergência verificada: erro cartesiano final < 0.001 mm.
+A simulação integra `q̈ = M(q)⁻¹·[τ − C(q,q̇) − G(q)]` com o controlador PD+G
+acima, usando `M`, `C·q̇+G` e `G` calculados pelo Robotics Toolbox (Newton–Euler
+recursivo) e o solver rígido `LSODA` (o laço de alto ganho é rígido).
+Convergência verificada: erro cartesiano final ≈ 0.002 mm.
 
 ---
 
@@ -118,10 +148,10 @@ Convergência verificada: erro cartesiano final < 0.001 mm.
 
 ```bash
 cd peter_corke/scripts
-python3 position_ui.py
+python position_ui.py      # com o venv ativado
 ```
 
-Interface matplotlib com caixa de texto para entrada de X, Y, Z e visualização 3D animada do braço.
+Interface matplotlib com caixa de texto para entrada de X, Y, Z e visualização 3D animada do braço (cinemática do Robotics Toolbox).
 
 ---
 

@@ -2,3 +2,25 @@ ros_ws/build/
 ros_ws/log/
 ros_ws/install/
 
+# Python virtual environment and caches
+peter_corke/.venv/
+__pycache__/
+*.pyc
+
+# Generated simulation output
+peter_corke/scripts/output/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# Relatório (não versionado)
+relatorio/
+

@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import TextBox, Button
 
-from cinematica_inversa import fk, fk_position, chain_points, ik, JOINT_NAMES
+from braco_rtb import fk, fk_position, chain_points, ik, JOINT_NAMES
 
 
 # ── State ─────────────────────────────────────────────────────────────────────
